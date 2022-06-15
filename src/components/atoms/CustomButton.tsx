@@ -47,7 +47,7 @@ const CustomButton = ({ handleClick, isDisabled, customClass, hover, type, title
     </button>
   ) : (
     <button
-      className={`text-white bg-${background} hover:bg-${hover} flex justify-center items-center px-8 py-4 capitalize cursor-pointer ${customClass}`}
+      className={`text-white bg-${background} hover:bg-${hover} flex justify-center items-center px-8 py-4  cursor-pointer ${customClass}`}
       onClick={() => handleClick()}
       type={type}
       value={value}

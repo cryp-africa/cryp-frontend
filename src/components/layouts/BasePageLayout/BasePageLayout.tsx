@@ -24,10 +24,10 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
       <section className="smallLaptop:px-0 relative bg-hotel h-screen bg-no-repeat bg-center bg-cover">
         {showNavigation && (
           <>
-            <div className="hidden smallLaptop:block smallLaptop:sticky smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
+            <div className="hidden smallLaptop:block smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
               <DesktopNavigation />
             </div>
-            <div className="block sticky w-full top-0 z-50 smallLaptop:hidden">
+            <div className="block w-full top-0 z-50 smallLaptop:hidden">
               <MobileNavigation />
             </div>
           </>

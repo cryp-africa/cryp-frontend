@@ -39,6 +39,7 @@ module.exports = {
         crypGreen: {
           500: "#6ED7D3",
           600: "#5abfbc",
+          800: "#388F88",
         },
       },
       width: {
@@ -47,6 +48,7 @@ module.exports = {
       },
       backgroundImage: {
         hotel: "url('/images/hero.png')",
+        gradient: "url('/images/gradient.png')",
       },
     },
   },

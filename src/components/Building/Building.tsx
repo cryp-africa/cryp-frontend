@@ -11,7 +11,7 @@ const Building = () => {
       </h3>
       <CustomButton
         background="transparent"
-        customClass="mt-8 border border-crypGreen-500 rounded-md"
+        customClass="mt-8 border border-crypGreen-500 rounded-md capitalize"
         handleClick={() => router.push("#")}
         hover="crypGreen-500"
         title="Sign me up"
