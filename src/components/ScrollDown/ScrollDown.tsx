@@ -3,7 +3,7 @@ import React from "react";
 
 const ScrollDown = () => {
   return (
-    <div className="absolute top-[80vh] left-[45vw] flex flex-col items-center">
+    <div className="absolute top-[80vh] left-[40vw] tablet:left-[45vw] flex flex-col items-center">
       <div className="cursor-pointer">
         <Icon name="scrollDown" />
       </div>
