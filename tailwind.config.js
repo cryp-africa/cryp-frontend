@@ -35,6 +35,9 @@ module.exports = {
         600: "600px",
         500: "500px",
       },
+      backgroundImage: {
+        hotel: "url('/images/hero.png')",
+      },
     },
   },
   plugins: [],
