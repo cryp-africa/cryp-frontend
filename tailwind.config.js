@@ -10,6 +10,9 @@ module.exports = {
     container: {
       center: true,
     },
+    fontFamily: {
+      spaceGro: ["Space Grotesk", "sans-serif"],
+    },
     screens: {
       mobile: "640px",
       tablet: "768px",
@@ -30,6 +33,12 @@ module.exports = {
         24: ["1.5rem", "2.063rem"],
         40: ["2.5rem", "3.375rem"],
         64: ["4rem", "4.375rem"],
+      },
+      colors: {
+        crypGreen: {
+          500: "#6ED7D3",
+          600: "#5abfbc",
+        },
       },
       width: {
         600: "600px",
