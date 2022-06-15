@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const Building = () => {
   const router = useRouter();
   return (
-    <div className="px-48 mt-16">
+    <div className="mt-16">
       <h3 className="text-64 w-3/4 font-medium">
         Building the operating system for <span className="text-crypGreen-500">African Businesses</span> on the blockchain
       </h3>

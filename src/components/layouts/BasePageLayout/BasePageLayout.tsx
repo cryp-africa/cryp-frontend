@@ -21,7 +21,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         <meta content={keywords} name="keywords" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
-      <section className="smallLaptop:px-0 bg-hotel h-screen bg-no-repeat bg-center bg-cover">
+      <section className="smallLaptop:px-0 relative bg-hotel h-screen bg-no-repeat bg-center bg-cover">
         {showNavigation && (
           <>
             <div className="hidden smallLaptop:block smallLaptop:sticky smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
