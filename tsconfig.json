@@ -13,7 +13,20 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      //These will be updated accordingly in future..These are just to accomodate absolute imports around the application.
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@dto/*": ["src/dto/*"],
+      "@shared/*": ["src/shared/*"],
+      "@componentData/*": ["src/componentData/*"],
+      "@pages/*": ["pages/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@layouts/*": ["src/components/layouts/*"],
+      "@images/*": ["public/images/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
