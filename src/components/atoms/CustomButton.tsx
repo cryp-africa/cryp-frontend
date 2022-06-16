@@ -39,7 +39,7 @@ const CustomButton = ({ handleClick, isDisabled, customClass, hover, type, title
 
   return isDisabled ? (
     <button
-      className={`disabled:opacity-40 pointer-events-none text-white bg-${background} flex justify-center items-center px-8 py-4 capitalize cursor-pointer ${customClass}`}
+      className={`disabled:opacity-40 pointer-events-none text-white bg-${background} flex justify-center items-center cursor-pointer ${customClass}`}
       type={type}
       value={value}
     >
@@ -47,7 +47,7 @@ const CustomButton = ({ handleClick, isDisabled, customClass, hover, type, title
     </button>
   ) : (
     <button
-      className={`text-white bg-${background} hover:bg-${hover} flex justify-center items-center px-8 py-4  cursor-pointer ${customClass}`}
+      className={`text-white bg-${background} hover:bg-${hover} flex justify-center items-center cursor-pointer ${customClass}`}
       onClick={() => handleClick()}
       type={type}
       value={value}
