@@ -4,7 +4,7 @@ import React from "react";
 
 const MobileNavigation = () => {
   return (
-    <div className="px-8 py-16">
+    <div className="px-4 py-16">
       <CustomLink destination="/">
         <Icon name="logo" />
       </CustomLink>

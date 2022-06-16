@@ -7,8 +7,8 @@ const Building = () => {
   // const router = useRouter();
   return (
     <div className="mt-16">
-      <h3 className="text-[30px] tablet:text-[50px] smallLaptop:text-64 tablet:w-3/4 tablet:font-medium">
-        Building the operating system for <span className="text-crypGreen-500">African Businesses</span> on the blockchain
+      <h3 className="text-[30px] tablet:text-[40px] smallLaptop:text-[45px] desktop:text-64 tablet:w-3/4 smallLaptop:w-full desktop:w-3/4 tablet:font-medium">
+        Building the operating system for <span className="text-crypGreen-500 font-extrabold">African Businesses</span> on the blockchain
       </h3>
       {/* <CustomButton
         background="transparent"
@@ -18,10 +18,10 @@ const Building = () => {
         title="Sign me up"
       /> */}
       <div className="hidden tablet:block">
-        <Icon className="mt-8 cursor-pointer hover:fill-crypGreen-500" name="desktopButtonContainer" text="Sign me up" />
+        <Icon className="mt-24 cursor-pointer hover:fill-crypGreen-500" name="desktopButtonContainer" text="Sign me up!" />
       </div>
-      <div className="block tablet:hidden">
-        <Icon className="mt-8 cursor-pointer hover:fill-crypGreen-500" name="mobileButtonContainer" text="Sign me up" />
+      <div className="flex justify-center items-center absolute top-[70vh] left-[20%] tablet:hidden">
+        <Icon className="mt-8 cursor-pointer hover:fill-crypGreen-500" name="mobileButtonContainer" text="Sign me up!" />
       </div>
     </div>
   );

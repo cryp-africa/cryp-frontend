@@ -5,9 +5,11 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="px-8 smallLaptop:px-48">
+    <div className="px-4 smallLaptop:px-48">
       <Building />
-      <ScrollDown />
+      <div className="hidden desktop:block">
+        <ScrollDown />
+      </div>
       <PaymentGateway />
     </div>
   );
