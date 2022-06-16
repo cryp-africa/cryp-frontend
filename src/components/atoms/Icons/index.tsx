@@ -8,6 +8,7 @@ interface IconProps {
   name: string;
   className?: string;
   onClick?: Function;
+  text?: string;
 }
 const Icon = (props: IconProps) => {
   if (props.name === "") {
@@ -25,6 +26,7 @@ const Icon = (props: IconProps) => {
 };
 Icon.defaultProps = {
   className: "",
+  text: "",
   onClick: () => {
     return null;
   },
