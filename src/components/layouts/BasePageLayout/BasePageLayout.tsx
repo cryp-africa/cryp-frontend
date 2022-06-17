@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import DesktopNavigation from "@components/layouts/DesktopNavigation/DesktopNavigation";
 import MobileNavigation from "@components/layouts/MobileNavigation/MobileNavigation";
+import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
 
 interface BasePageLayout {
   children: any;
@@ -26,10 +27,12 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
           <>
             <div className="hidden smallLaptop:block smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
               <div className="bg-hotel bg-no-repeat h-screen bg-center blur-md bg-cover" />
+              <ParticlesContainer />
               <DesktopNavigation />
             </div>
             <div className="block w-full top-0 z-50 smallLaptop:hidden">
               <div className="bg-hotel bg-no-repeat h-screen bg-center blur-sm bg-cover" />
+              <ParticlesContainer />
               <MobileNavigation />
             </div>
           </>
