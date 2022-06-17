@@ -27,7 +27,7 @@ const PaymentGateway = () => {
           title="notify me"
         />
       </div>
-      <p className="text-16 text-gray-500 mt-8">*Don’t worry, we won’t spam you</p>
+      <p className="text-16 text-gray-500 smallLaptop:text-gray-300 mt-8">*Don’t worry, we won’t spam you</p>
     </div>
   );
 };

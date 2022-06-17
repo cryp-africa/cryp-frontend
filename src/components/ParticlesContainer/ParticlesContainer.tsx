@@ -70,7 +70,7 @@ const ParticlesContainer = () => {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 0.9,
             straight: false,
           },
           number: {
