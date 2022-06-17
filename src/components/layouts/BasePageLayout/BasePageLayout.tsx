@@ -21,13 +21,15 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         <meta content={keywords} name="keywords" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
-      <section className="smallLaptop:px-0 relative bg-hotel h-screen bg-no-repeat bg-center bg-cover">
+      <section className="smallLaptop:px-0 relative bg-black h-screen ">
         {showNavigation && (
           <>
             <div className="hidden smallLaptop:block smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
+              <div className="bg-hotel bg-no-repeat h-screen bg-center blur-md bg-cover" />
               <DesktopNavigation />
             </div>
             <div className="block w-full top-0 z-50 smallLaptop:hidden">
+              <div className="bg-hotel bg-no-repeat h-screen bg-center blur-sm bg-cover" />
               <MobileNavigation />
             </div>
           </>

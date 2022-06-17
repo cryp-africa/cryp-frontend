@@ -4,7 +4,7 @@ import React from "react";
 
 const DesktopNavigation = () => {
   return (
-    <div className="px-16 py-16 bigLaptop:px-20">
+    <div className="px-16 py-16 bigLaptop:px-20 absolute top-0">
       <CustomLink destination="/">
         <Icon name="logo" />
       </CustomLink>
