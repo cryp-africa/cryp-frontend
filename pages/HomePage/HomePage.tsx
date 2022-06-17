@@ -9,7 +9,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="px-4 smallLaptop:px-48">
+    <div className="px-4 smallLaptop:px-32 desktop:px-48">
       <Building focusOnSubscribe={focusOnSubscribe} />
       <div className="hidden desktop:block">
         <ScrollDown />
