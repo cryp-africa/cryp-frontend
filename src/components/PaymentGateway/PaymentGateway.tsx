@@ -4,7 +4,7 @@ import React from "react";
 
 const PaymentGateway = () => {
   return (
-    <div className="bg-black top-[100vh] -ml-[50vw] left-[50%]  absolute w-screen px-8 py-16 smallLaptop:px-48 smallLaptop:py-32 smallLaptop:bg-gradient bg-center bg-no-repeat">
+    <div className="bg-black top-[100vh] -ml-[50vw] left-[50%]  absolute w-screen px-8 py-16 smallLaptop:px-48 smallLaptop:py-32 bg-gradient bg-center bg-no-repeat">
       <h3 className="font-medium text-[30px] tablet:text-[40px] desktop:text-[60px] desktop:mt-24">Cryp Payment Gateway</h3>
       <div className="flex mt-8 items-center desktop:ml-36">
         <Icon name="horizontalDividerMobile" />
@@ -23,6 +23,7 @@ const PaymentGateway = () => {
           customClass="uppercase rounded-full desktop:mr-2 px-4 py-3 whitespace-nowrap smallLaptop:px-8 smallLaptop:py-4"
           handleClick={() => {}}
           hover="crypGreen-500"
+          id="subscribe"
           title="notify me"
         />
       </div>

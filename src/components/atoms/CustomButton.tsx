@@ -15,6 +15,8 @@ interface ButtonProps {
   value?: string;
   icon?: string;
   iconClass?: string;
+  id?: string;
+  ref?: any;
 }
 
 /**
@@ -25,7 +27,7 @@ interface ButtonProps {
  */
 const renderContent = (title: any, isSubmitting: any) => <Fragment>{isSubmitting ? <ImSpinner9 /> : <Fragment>{title}</Fragment>}</Fragment>;
 
-const CustomButton = ({ handleClick, isDisabled, customClass, hover, type, title, background, isSubmitting, value, icon, iconClass }: ButtonProps) => {
+const CustomButton = ({ handleClick, ref, id, isDisabled, customClass, hover, type, title, background, isSubmitting, value, icon, iconClass }: ButtonProps) => {
   /**
    * This displays the rendered content
    */
@@ -40,6 +42,8 @@ const CustomButton = ({ handleClick, isDisabled, customClass, hover, type, title
   return isDisabled ? (
     <button
       className={`disabled:opacity-40 pointer-events-none text-white bg-${background} flex justify-center items-center cursor-pointer ${customClass}`}
+      id={id}
+      ref={ref}
       type={type}
       value={value}
     >
@@ -48,7 +52,9 @@ const CustomButton = ({ handleClick, isDisabled, customClass, hover, type, title
   ) : (
     <button
       className={`text-white bg-${background} hover:bg-${hover} flex justify-center items-center cursor-pointer ${customClass}`}
+      id={id}
       onClick={() => handleClick()}
+      ref={ref}
       type={type}
       value={value}
     >
@@ -68,4 +74,6 @@ CustomButton.defaultProps = {
   icon: "",
   iconClass: "",
   value: "",
+  id: "",
+  ref: null,
 };

@@ -3,6 +3,7 @@ import Head from "next/head";
 import DesktopNavigation from "@components/layouts/DesktopNavigation/DesktopNavigation";
 import MobileNavigation from "@components/layouts/MobileNavigation/MobileNavigation";
 import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
+import ParticlesContainer2 from "@components/ParticlesContainer2/ParticlesContainer2";
 
 interface BasePageLayout {
   children: any;
@@ -32,7 +33,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
             </div>
             <div className="block w-full top-0 z-50 smallLaptop:hidden">
               <div className="bg-hotel bg-no-repeat h-screen bg-center blur-sm bg-cover" />
-              <ParticlesContainer />
+              <ParticlesContainer2 />
               <MobileNavigation />
             </div>
           </>
