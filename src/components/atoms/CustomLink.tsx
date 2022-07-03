@@ -20,5 +20,5 @@ export default CustomLink;
 
 CustomLink.defaultProps = {
   customClass: "",
-  hover: "citiGreen-600",
+  hover: "crypGreen-500",
 };

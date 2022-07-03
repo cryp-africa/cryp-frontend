@@ -3,8 +3,8 @@ import React from "react";
 
 import DesktopNavigation from "@components/layouts/DesktopNavigation/DesktopNavigation";
 import MobileNavigation from "@components/layouts/MobileNavigation/MobileNavigation";
-import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
-import ParticlesContainer2 from "@components/ParticlesContainer2/ParticlesContainer2";
+// import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
+// import ParticlesContainer2 from "@components/ParticlesContainer2/ParticlesContainer2";
 
 interface BasePageLayout {
   children: any;
@@ -24,17 +24,18 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         <meta content={keywords} name="keywords" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
-      <section className="smallLaptop:px-0 relative bg-black h-screen ">
+      {/* <section className="smallLaptop:px-0 relative bg-black h-screen "> */}
+      <section className="smallLaptop:px-0 relative">
         {showNavigation && (
           <>
-            <div className="hidden smallLaptop:block smallLaptop:w-full smallLaptop:top-0 smallLaptop:z-50">
-              <div className="bg-hotel bg-no-repeat h-screen bg-center blur-md bg-cover" />
-              <ParticlesContainer />
+            <div className="hidden smallLaptop:block smallLaptop:w-full smallLaptop:sticky smallLaptop:top-0 smallLaptop:z-50">
+              {/* <div className="bg-hotel bg-no-repeat h-screen bg-center blur-md bg-cover" />
+              <ParticlesContainer /> */}
               <DesktopNavigation />
             </div>
             <div className="block w-full top-0 z-50 smallLaptop:hidden">
-              <div className="bg-hotel bg-no-repeat h-screen bg-center blur-sm bg-cover" />
-              <ParticlesContainer2 />
+              {/* <div className="bg-hotel bg-no-repeat h-screen bg-center blur-sm bg-cover" />
+              <ParticlesContainer2 /> */}
               <MobileNavigation />
             </div>
           </>

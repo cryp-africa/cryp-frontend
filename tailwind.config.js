@@ -24,6 +24,7 @@ module.exports = {
     },
     fontFamily: {
       spaceGro: ["Space Grotesk", "sans-serif"],
+      raleway: ["Raleway", "sans-serif"],
     },
     screens: {
       mobile: "640px",
@@ -49,9 +50,16 @@ module.exports = {
       },
       colors: {
         crypGreen: {
+          100: "#AFEE6E4",
           500: "#6ED7D3",
           600: "#5abfbc",
           800: "#388F88",
+        },
+        crypYellow: {
+          200: "#F4CA64",
+        },
+        crypMix: {
+          200: "#A7EDEA",
         },
       },
       width: {

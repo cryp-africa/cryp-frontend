@@ -17,8 +17,11 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com" rel="preconnect" />
           <link href="https://fonts.gstatic.com" rel="preconnect" />
           <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com" rel="preconnect" />
+          <link href="https://fonts.gstatic.com" rel="preconnect" />
+          <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet" />
         </Head>
-        <body className="box-border text-white font-spaceGro">
+        <body className="box-border text-white bg-black">
           <Main />
           <NextScript />
         </body>
