@@ -1,6 +1,7 @@
+import React from "react";
+
 import CustomLink from "@components/atoms/CustomLink";
 import Icon from "@components/atoms/Icons";
-import React from "react";
 
 const MobileNavigation = () => {
   return (

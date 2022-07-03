@@ -1,5 +1,6 @@
-import Icon from "@components/atoms/Icons";
 import React from "react";
+
+import Icon from "@components/atoms/Icons";
 
 const ScrollDown = () => {
   return (

@@ -1,7 +1,8 @@
+import React from "react";
+
 import Building from "@components/Building/Building";
 import PaymentGateway from "@components/PaymentGateway/PaymentGateway";
 import ScrollDown from "@components/ScrollDown/ScrollDown";
-import React from "react";
 
 const HomePage = () => {
   const focusOnSubscribe = () => {

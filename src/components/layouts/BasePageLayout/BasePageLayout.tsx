@@ -1,5 +1,6 @@
-import React from "react";
 import Head from "next/head";
+import React from "react";
+
 import DesktopNavigation from "@components/layouts/DesktopNavigation/DesktopNavigation";
 import MobileNavigation from "@components/layouts/MobileNavigation/MobileNavigation";
 import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";

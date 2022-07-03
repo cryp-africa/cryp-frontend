@@ -1,6 +1,7 @@
 import React from "react";
-import Icon from "@components/atoms/Icons";
 import { Link } from "react-scroll";
+
+import Icon from "@components/atoms/Icons";
 
 const Building = ({ focusOnSubscribe }: any) => {
   return (

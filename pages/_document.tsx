@@ -1,5 +1,5 @@
-import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
 
 /**
  * This is a document class that contains meta links for our application

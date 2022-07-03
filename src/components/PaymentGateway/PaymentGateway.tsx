@@ -1,6 +1,7 @@
+import React from "react";
+
 import CustomButton from "@components/atoms/CustomButton";
 import Icon from "@components/atoms/Icons";
-import React from "react";
 
 const PaymentGateway = () => {
   return (
