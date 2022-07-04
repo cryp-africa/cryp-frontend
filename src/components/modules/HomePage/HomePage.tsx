@@ -2,6 +2,7 @@ import React from "react";
 
 import Building from "@components/organisms/LandingPage/Building/Building";
 import DaoCommunity from "@components/organisms/LandingPage/DAOCommunity/DAOCommunity";
+import OurPartners from "@components/organisms/LandingPage/OurPartners/OurPartners";
 import Solutions from "@components/organisms/LandingPage/Solutions/Solutions";
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Building />
       <Solutions />
       <DaoCommunity />
+      <OurPartners />
     </div>
   );
 };

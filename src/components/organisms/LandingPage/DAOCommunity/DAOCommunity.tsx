@@ -32,7 +32,7 @@ const DaoCommunity = () => {
             </div>
           </div>
         ))}
-        <Icon className="ml-4" name="proceed" />
+        <Icon className="ml- cursor-pointer" name="proceed" />
       </div>
       <div className="flex justify-center items-center mb-8">
         <CustomButton customClass="mt-12" handleClick={() => {}} size={ButtonProperties.SIZES.small} title="JOIN COMMUNITY" variant={ButtonProperties.VARIANT.primary.name} />
