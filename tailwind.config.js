@@ -72,6 +72,7 @@ module.exports = {
         daoBg1: "url('/images/daoCommunity/dao1bg.png')",
         daoBg2: "url('/images/daoCommunity/daoBg22.png')",
         daoBg3: "url('/images/daoCommunity/dao3bg.png')",
+        advisorBg: "url('/images/advisors/advisorBg.png')",
       },
     },
   },
