@@ -6,7 +6,7 @@ import { DesktopNav } from "@components/componentData/Navigation/DesktopNav";
 
 const DesktopNavigation = () => {
   return (
-    <div className="px-16 w-full py-16 bigLaptop:px-20 flex justify-between items-center">
+    <div className="px-16 w-full py-16 bigLaptop:px-20 flex justify-between items-center bg-black">
       <div className="flex justify-between w-[45%]">
         <CustomLink destination="/">
           <Icon name="logo" />

@@ -57,7 +57,7 @@ export const ButtonProperties = {
     primary: {
       name: "primary",
       background: "crypGreen-800",
-      hover: "crypGreen-500",
+      hover: "crypGreen-600",
       disabled: "citiGreen-200",
       focused: "citiGreen-800",
     },

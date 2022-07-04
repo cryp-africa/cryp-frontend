@@ -1,7 +1,7 @@
 import React from "react";
 
 import Icon from "@components/atoms/Icons";
-import { SolutionsData } from "@components/componentData/Solutions/SolutionsData";
+import { SolutionsData } from "@components/componentData/SolutionsData/SolutionsData";
 
 const Solutions = () => {
   return (
@@ -9,7 +9,7 @@ const Solutions = () => {
       <h1 className="text-center capitalize font-semibold text-[47px] mb-12 leading-[55px] ">our solutions for your business</h1>
       <div className="flex items-center justify-center w-full relative">
         {SolutionsData.map((solution) => (
-          <div className="bg-slate-800 w-[576px] h-[572px] rounded-lg mx-12 p-12 relative" key={solution.id}>
+          <div className="bg-slate-800 w-[576px] h-[572px] rounded-lg mx-8 p-12 relative" key={solution.id}>
             <div className="flex justify-between">
               <h5 className="uppercase text-16 font-semibold ">{solution.caption}</h5>
               {solution.icon && <Icon className="absolute right-0 top-0" name="rhombus" />}
