@@ -69,6 +69,7 @@ module.exports = {
       },
       backgroundImage: {
         hotel: "url('/images/hero.png')",
+        hotel2: "url('/images/hero2.png')",
         gradient: "url('/images/gradient.png')",
         daoBg1: "url('/images/daoCommunity/dao1bg.png')",
         daoBg2: "url('/images/daoCommunity/daoBg22.png')",

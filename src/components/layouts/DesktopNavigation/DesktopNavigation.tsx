@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import CustomLink from "@components/atoms/CustomLink";
 import Icon from "@components/atoms/Icons";
 import { DesktopNav } from "@components/componentData/Navigation/DesktopNav";
 
 const DesktopNavigation = () => {
+  const [navBar, setNavBar] = useState<boolean>(false);
+
+  const changeBackGround = () => {
+    if (window.scrollY > 80) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      window.addEventListener("scroll", changeBackGround);
+    }
+  });
+
   return (
-    <div className="px-16 w-full py-16 bigLaptop:px-20 flex justify-between items-center bg-black">
+    <div className={`px-16 w-full py-16 bigLaptop:px-20 flex justify-between items-center scroll-bg ${navBar ? "bg-black" : ""}`}>
       <div className="flex justify-between w-[45%]">
         <CustomLink destination="/">
           <Icon name="logo" />
