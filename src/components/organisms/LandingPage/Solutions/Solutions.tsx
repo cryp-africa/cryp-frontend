@@ -23,7 +23,7 @@ const Solutions = () => {
                 </div>
               )}
             </div>
-            <h2 className="text-[37px] tablet:text-[100px] font-bold text-right tablet:text-center text-crypGreen-800 uppercase my-8">{solution.title}</h2>
+            <h2 className="text-37 tablet:text-[100px] font-bold text-right tablet:text-center text-crypGreen-800 uppercase my-8">{solution.title}</h2>
             <p className="uppercase text-left tablet:text-center text-20 font-semibold ">{solution.subHeader}</p>
             <div className="flex items-center tablet:justify-center">
               <p className="text-16 text-left tablet:text-center mt-12 mb-32 w-full tablet:w-3/4 font-medium ">{solution.body}</p>
