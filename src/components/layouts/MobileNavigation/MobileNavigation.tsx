@@ -5,7 +5,7 @@ import Icon from "@components/atoms/Icons";
 
 const MobileNavigation = () => {
   return (
-    <div className="px-4 py-16 absolute top-0">
+    <div className="px-16 w-full py-16 bigLaptop:px-20 flex justify-between items-center bg-black">
       <CustomLink destination="/">
         <Icon name="logo" />
       </CustomLink>

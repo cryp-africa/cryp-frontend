@@ -22,7 +22,9 @@ const OurAdvisors = () => {
             <h4 className="text-16  mt-4 font-semibold">{advisor.name}</h4>
             <p className="text-14  mt-8 font-medium">{advisor.position}</p>
             {active === advisor.id && (
-              <div className={`absolute top-[10%] ${active % 4 === 0 ? "right-[50%]" : "left-[50%]"}  z-10 bg-advisorBg p-5 w-[360px] h-[342px]`}>
+              <div
+                className={`absolute top-[10%] ${active % 4 === 0 ? "right-[50%]" : "left-[50%]"}  z-10 bg-advisorBg p-5 w-[360px] h-[342px] transition ease-linear duration-500`}
+              >
                 <h4 className="text-20 flex font-semibold mb-8">{advisor.about.name}</h4>
                 <p className="text-14 text-left font-medium">{advisor.about.title}</p>
                 <p className="text-14 text-left leading-[23px] font-medium mt-8 mb-[24px] w-full">{advisor.about.body}</p>

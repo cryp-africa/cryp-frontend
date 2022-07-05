@@ -9,7 +9,7 @@ import Solutions from "@components/organisms/LandingPage/Solutions/Solutions";
 
 const HomePage = () => {
   return (
-    <div className="px-4 smallLaptop:px-32 desktop:px-16">
+    <div className="tablet:px-4 smallLaptop:px-32 desktop:px-16">
       <Building />
       <Solutions />
       <DaoCommunity />

@@ -33,7 +33,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
               <ParticlesContainer /> */}
               <DesktopNavigation />
             </div>
-            <div className="block w-full top-0 z-50 smallLaptop:hidden">
+            <div className="block w-full top-0 sticky z-50 smallLaptop:hidden">
               {/* <div className="bg-hotel bg-no-repeat h-screen bg-center blur-sm bg-cover" />
               <ParticlesContainer2 /> */}
               <MobileNavigation />
