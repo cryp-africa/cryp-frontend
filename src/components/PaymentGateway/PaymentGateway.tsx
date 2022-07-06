@@ -1,6 +1,6 @@
-import CustomButton from "@components/atoms/CustomButton";
-import Icon from "@components/atoms/Icons";
 import React from "react";
+
+import Icon from "@components/atoms/Icons";
 
 const PaymentGateway = () => {
   return (
@@ -18,14 +18,14 @@ const PaymentGateway = () => {
           placeholder="Enter your email address..."
           type="text"
         />
-        <CustomButton
+        {/* <CustomButton
           background="crypGreen-800"
           customClass="uppercase rounded-full desktop:mr-2 px-4 py-3 whitespace-nowrap smallLaptop:px-8 smallLaptop:py-4"
           handleClick={() => {}}
           hover="crypGreen-500"
           id="subscribe"
           title="notify me"
-        />
+        /> */}
       </div>
       <p className="text-16 text-gray-500 smallLaptop:text-gray-300 mt-8">*Don’t worry, we won’t spam you</p>
     </div>

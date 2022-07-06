@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
 import Link from "next/link";
+import React, { ReactNode } from "react";
 
 export interface CustomLinkProps {
   destination: string;
@@ -20,5 +20,5 @@ export default CustomLink;
 
 CustomLink.defaultProps = {
   customClass: "",
-  hover: "citiGreen-600",
+  hover: "crypGreen-500",
 };

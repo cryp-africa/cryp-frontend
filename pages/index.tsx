@@ -1,7 +1,8 @@
-import React from "react";
 import type { NextPage } from "next";
-import HomePage from "@pages/HomePage/HomePage";
+import React from "react";
+
 import BasePageLayout from "@components/layouts/BasePageLayout/BasePageLayout";
+import HomePage from "@components/modules/HomePage/HomePage";
 
 const Home: NextPage = () => {
   return (
