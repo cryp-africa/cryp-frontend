@@ -23,7 +23,7 @@ const DesktopNavigation = () => {
 
   return (
     <div className={`px-16 w-full py-16 bigLaptop:px-20 flex justify-between items-center scroll-bg ${navBar ? "bg-black" : ""}`}>
-      <div className="flex justify-between w-[45%]">
+      <div className="flex items-center justify-between w-[45%]">
         <CustomLink destination="/">
           <Icon name="logo" />
         </CustomLink>

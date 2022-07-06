@@ -6,7 +6,7 @@ import { ButtonProperties } from "@shared/libs/helpers";
 
 const Building = () => {
   return (
-    <div className="py-48 px-10 tablet:px-0">
+    <div className="pt-48 pb-36 px-10 smallLaptop:px-0">
       <div>
         <p className="text-[1.875rem] leading-[2.7rem] tablet:whitespace-normal tablet:leading-[4rem] smallLaptop:leading-[5rem] desktop:leading-[6.375rem] tablet:text-[2.5rem] smallLaptop:text-[2.813rem] desktop:text-[4rem]  tablet:font-medium">
           Building the operating system for

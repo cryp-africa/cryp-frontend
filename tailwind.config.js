@@ -50,6 +50,9 @@ module.exports = {
         64: ["4rem", "4.375rem"],
       },
       colors: {
+        crypGray: {
+          200: "#C5C9CD"
+        },
         crypGreen: {
           100: "#AFEE6E4",
           500: "#6ED7D3",

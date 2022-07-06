@@ -14,7 +14,7 @@ import FooterOptions from "@components/FooterOptions.tsx/FooterOptions";
 const DesktopFooter = () => {
   return (
     <div>
-      <div className="bg-[#3D4156] flex items-baseline justify-between py-20 px-36">
+      <div className="bg-[#3D4156] flex items-baseline justify-between py-20 px-16 bigLaptop:px-36">
         <FooterOptions options={Products} title="Products" />
         <FooterOptions options={Resources} title="Resources" />
         <FooterOptions options={Developers} title="Developers" />
@@ -38,7 +38,7 @@ const DesktopFooter = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center smallLaptop:justify-end bigLaptop:justify-center items-center">
           {Policy.map((policy) => (
             <div className="mr-4 flex items-center" key={policy.id}>
               <CustomLink destination={policy.route}>{policy.name}</CustomLink>

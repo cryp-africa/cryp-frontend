@@ -5,14 +5,14 @@ import { MediaData } from "@components/componentData/MediaData/MediaData";
 
 const Media = () => {
   return (
-    <div className="mt-28 px-20">
-      <h3 className="font-semibold text-[2.938rem] text-center">Media</h3>
+    <div className="smallLaptop:mt-28  smallLpatop:px-20">
+      <h3 className="font-semibold text-20 smallLaptop:text-[2.938rem] text-center">Media</h3>
       <div className="flex items-center justify-center">
-        <p className="font-medium text-center text-18 w-[30%] mt-8">As mentioned in:</p>
+        <p className="font-medium text-center text-crypGray-200 text-18 bigLaptop:w-[30%] mt-8 whitespace-nowrap">As mentioned in:</p>
       </div>
-      <div className="grid grid-cols-6 gap-3 rounded-md my-24  align-center justify-center">
+      <div className="flex pl-48 hide-scrollbar scroll-smooth flex-nowrap bigLaptop:grid grid-cols-6 gap-3 rounded-md my-24 overflow-x-scroll  align-center justify-center">
         {MediaData.map((media) => (
-          <div className="mx-4 relative mb-8" key={media.id}>
+          <div className="mx-4 relative mb-8 shrink-0 grow-0 basis-auto" key={media.id}>
             <Icon className="mx-auto" name={media.icon} />
           </div>
         ))}

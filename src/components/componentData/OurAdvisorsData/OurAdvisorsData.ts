@@ -2,6 +2,7 @@ export const OurAdvisorsData = [
   {
     id: 1,
     name: "Moerieda Mackay",
+    lastName: "Mackay",
     position: "Founder & CEO of Stride",
     image: "/images/advisors/advisor1.png",
     about: {
@@ -13,6 +14,7 @@ export const OurAdvisorsData = [
   {
     id: 2,
     name: "Ali Hussein Kassim",
+    lastName: "Kassim",
     position: "Chairman, Association of Fintechs, Kenya",
     image: "/images/advisors/advisor2.png",
     about: {
@@ -24,6 +26,7 @@ export const OurAdvisorsData = [
   {
     id: 3,
     name: "Alakanani Itireleng",
+    lastName: "Itireleng",
     position: "CEO, Satoshicentre",
     image: "/images/advisors/advisor3.png",
     about: {
@@ -35,6 +38,7 @@ export const OurAdvisorsData = [
   {
     id: 4,
     name: "Raj A. Kapoor",
+    lastName: "Kapoor",
     position: "Founder/CEO India Blockchain Alliance",
     image: "/images/advisors/advisor3.png",
     about: {
@@ -46,6 +50,7 @@ export const OurAdvisorsData = [
   {
     id: 5,
     name: "Christian Duffus",
+    lastName: "Duffus",
     position: "Founder & CEO Fonbnk",
     image: "/images/advisors/advisor1.png",
     about: {
@@ -57,6 +62,7 @@ export const OurAdvisorsData = [
   {
     id: 6,
     name: "Kue Barinor Paul",
+    lastName: "Paul",
     position: "Principal Partner, Blocklex.Tech",
     image: "/images/advisors/advisor2.png",
     about: {
@@ -68,6 +74,7 @@ export const OurAdvisorsData = [
   {
     id: 7,
     name: "Kue Barinor Paul",
+    lastName: "Paul",
     position: "Principal Partner, Blocklex.Tech",
     image: "/images/advisors/advisor3.png",
     about: {
@@ -79,6 +86,7 @@ export const OurAdvisorsData = [
   {
     id: 8,
     name: "Kue Barinor Paul",
+    lastName: "Paul",
     position: "Principal Partner, Blocklex.Tech",
     image: "/images/advisors/advisor3.png",
     about: {
