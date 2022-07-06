@@ -18,21 +18,21 @@ const MobileNavigation = () => {
     setIsOpen(false);
   });
 
-   const [navBar, setNavBar] = useState<boolean>(false);
+  const [navBar, setNavBar] = useState<boolean>(false);
 
-   const changeBackGround = () => {
-     if (window.scrollY > 80) {
-       setNavBar(true);
-     } else {
-       setNavBar(false);
-     }
-   };
+  const changeBackGround = () => {
+    if (window.scrollY > 80) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  };
 
-   useEffect(() => {
-     if (typeof window !== undefined) {
-       window.addEventListener("scroll", changeBackGround);
-     }
-   });
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      window.addEventListener("scroll", changeBackGround);
+    }
+  });
 
   return (
     <>
@@ -52,13 +52,7 @@ const MobileNavigation = () => {
           </li>
         ))}
         <li>
-          <CustomButton
-            customClass="h-16 px-5"
-            handleClick={() => {}}
-            size={ButtonProperties.SIZES.small}
-            title="Get Started"
-            variant={ButtonProperties.VARIANT.primary.name}
-          />
+          <CustomButton customClass="h-16 px-5" handleClick={() => {}} size={ButtonProperties.SIZES.small} title="Get Started" variant={ButtonProperties.VARIANT.primary.name} />
         </li>
       </ul>
     </>

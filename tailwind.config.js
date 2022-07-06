@@ -51,7 +51,7 @@ module.exports = {
       },
       colors: {
         crypGray: {
-          200: "#C5C9CD"
+          200: "#C5C9CD",
         },
         crypGreen: {
           100: "#AFEE6E4",

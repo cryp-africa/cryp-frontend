@@ -11,7 +11,9 @@ const OurPartners = () => {
     <div className="mt-28 bigLaptop:px-20">
       <h3 className="font-semibold text-20 smallLaptop:text-[2.938rem] whitespace-nowrap text-center">Our Partners</h3>
       <div className="flex items-center justify-center">
-        <p className="font-medium text-center text-crypGray-200 text-18 w-[80%] bigLaptop:w-[30%] my-8">We are trusted and partnered with some of the world’s leading blockchain companies</p>
+        <p className="font-medium text-center text-crypGray-200 text-18 w-[80%] bigLaptop:w-[30%] my-8">
+          We are trusted and partnered with some of the world’s leading blockchain companies
+        </p>
       </div>
       <div className="grid grid-cols-5 bigLaptop:grid-cols-6 gap-3 rounded-md smallLaptop:my-8  align-center justify-center px-5 smallLaptop:pl-0">
         {OurPartnersData.map((partner) => (
