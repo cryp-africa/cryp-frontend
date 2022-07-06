@@ -6,7 +6,7 @@ import { SolutionsData } from "@components/componentData/SolutionsData/Solutions
 
 const Solutions = () => {
   return (
-    <div className="my-32">
+    <div className="mb-32">
       <h1 className="text-center capitalize font-semibold text-20 tablet:text-[47px] mb-12 leading-[55px] ">our solutions for your business</h1>
       <div className="flex tablet:items-center flex-col tablet:flex-row justify-center w-full relative">
         {SolutionsData.map((solution) => (

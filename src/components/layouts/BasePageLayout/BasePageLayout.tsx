@@ -3,6 +3,9 @@ import React from "react";
 
 import DesktopNavigation from "@components/layouts/DesktopNavigation/DesktopNavigation";
 import MobileNavigation from "@components/layouts/MobileNavigation/MobileNavigation";
+
+import DesktopFooter from "../DesktopFooter/DesktopFooter";
+import MobileFooter from "../MobileFooter/MobileFooter";
 // import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
 // import ParticlesContainer2 from "@components/ParticlesContainer2/ParticlesContainer2";
 
@@ -13,9 +16,10 @@ interface BasePageLayout {
   title?: string;
   description?: string;
   keywords?: string;
+  hideFooterOnMobile?: boolean;
 }
 
-const BasePageLayout = ({ children, showNavigation, showFooter, title, description, keywords }: BasePageLayout) => {
+const BasePageLayout = ({ children, showNavigation, showFooter, title, description, keywords, hideFooterOnMobile }: BasePageLayout) => {
   return (
     <div>
       <Head>
@@ -39,6 +43,18 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
           </>
         )}
         <main className="h-auto z-50">{children}</main>
+        {showFooter && (
+          <>
+            <div className="hidden smallLaptop:block smallLaptop:w-full">
+              <DesktopFooter />
+            </div>
+            {hideFooterOnMobile && (
+              <div className="block w-full smallLaptop:hidden">
+                <MobileFooter />
+              </div>
+            )}
+          </>
+        )}
       </section>
     </div>
   );
@@ -50,6 +66,7 @@ BasePageLayout.defaultProps = {
   title: "Cryp",
   description: "A blockchain powered gateway",
   keywords: "crypto, blockchain, cryp, dapp, decentralized",
+  hideFooterOnMobile: true,
 };
 
 export default BasePageLayout;

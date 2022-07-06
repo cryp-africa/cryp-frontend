@@ -29,14 +29,12 @@ const DesktopNavigation = () => {
         </CustomLink>
         <ul className="flex items-center justify-between">
           {DesktopNav.map((data) => (
-            <>
-              <li className="mx-8 flex items-center " key={data.id}>
-                <CustomLink customClass="capitalize text-16 font-semibold" destination={data.route}>
-                  {data.name}
-                </CustomLink>
-                {data.hasOptions && <Icon className="ml-4 cursor-pointer" name="dropDown" />}
-              </li>
-            </>
+            <li className="mx-8 flex items-center " key={data.id}>
+              <CustomLink customClass="capitalize text-16 font-semibold" destination={data.route}>
+                {data.name}
+              </CustomLink>
+              {data.hasOptions && <Icon className="ml-4 cursor-pointer" name="dropDown" />}
+            </li>
           ))}
         </ul>
       </div>

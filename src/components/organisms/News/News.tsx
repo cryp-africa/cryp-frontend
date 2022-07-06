@@ -9,7 +9,7 @@ const News = () => {
   return (
     <div className="px-20">
       {NewsData.map((news) => (
-        <div className={`${news.id !== NewsData.length ? "mb-40" : ""}`} key={news.id}>
+        <div className={`${news.id !== NewsData.length ? "mb-40" : "pb-40"}`} key={news.id}>
           <div className="text-14 flex items-center">
             <h5 className=" font-semibold mr-4">{news.heading}</h5>
             <h6 className="font-medium">{news.date}</h6>
