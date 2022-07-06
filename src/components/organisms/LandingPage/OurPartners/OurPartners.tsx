@@ -9,7 +9,7 @@ import { ButtonProperties } from "@shared/libs/helpers";
 const OurPartners = () => {
   return (
     <div className="mt-28 px-20">
-      <h3 className="font-semibold text-[47px] text-center">Our Partners</h3>
+      <h3 className="font-semibold text-[2.938rem] text-center">Our Partners</h3>
       <div className="flex items-center justify-center">
         <p className="font-medium text-center text-18 w-[30%] my-8">We are trusted and partnered with some of the world’s leading blockchain companies</p>
       </div>

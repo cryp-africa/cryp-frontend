@@ -38,10 +38,12 @@ const DesktopNavigation = () => {
           ))}
         </ul>
       </div>
-      <div>
+      <div className="flex items-center justify-between">
         <CustomLink customClass="uppercase text-16 font-bold text-crypYellow-200" destination="#">
           join waitlist
         </CustomLink>
+        <Icon className="mx-4 cursor-pointer" name="nigeriaFlag" />
+        <Icon className="cursor-pointer" name="dropDown" />
       </div>
     </div>
   );
