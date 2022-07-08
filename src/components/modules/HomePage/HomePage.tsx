@@ -10,7 +10,7 @@ import News from "@components/organisms/News/News";
 
 const HomePage = () => {
   return (
-    <div className="tablet:px-4 smallLaptop:px-32 desktop:px-16 b-hotel2 bg-cover bg-center bg-no-repeat">
+    <div className="tablet:px-4 smallLaptop:px-18 desktop:px-16 bg-downsizeMobile smallLaptop:bg-downsizeDesktop bg-cover bg-center bg-no-repeat">
       <Building />
       <Solutions />
       <DaoCommunity />

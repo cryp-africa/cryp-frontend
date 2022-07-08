@@ -14,21 +14,21 @@ import FooterOptions from "@components/FooterOptions.tsx/FooterOptions";
 const DesktopFooter = () => {
   return (
     <div>
-      <div className="bg-[#3D4156] flex items-baseline justify-between py-20 px-16 bigLaptop:px-36">
+      <div className="bg-[#3D4156] flex items-baseline justify-between py-16 px-16 bigLaptop:px-20">
         <FooterOptions options={Products} title="Products" />
         <FooterOptions options={Resources} title="Resources" />
         <FooterOptions options={Developers} title="Developers" />
         <FooterOptions options={Company} title="Company" />
         <FooterOptions options={Contact} title="Contact" />
       </div>
-      <div className="bg-[#636476] p-20 text-14 font-medium relative">
+      <div className="bg-[#636476] p-10 text-14 font-medium relative h-[164px]">
         <div className="flex justify-center items-center pb-16">
-          <div className="absolute top-[28%] left-[8%] flex items-center ">
+          <div className="absolute top-[28%] left-20 smallLaptop:left-16 bigLaptop:left-20 flex items-center ">
             <h5 className="mr-4">Nigeria</h5>
             <Icon className="mr-4 cursor-pointer" name="nigeriaFlag" />
             <Icon className="cursor-pointer" name="dropDown" />
           </div>
-          <div className="absolute bottom-[30%] left-[8%] flex items-center ">
+          <div className="absolute bottom-[20%] left-20 smallLaptop:left-16 bigLaptop:left-20 flex items-center ">
             <Icon className="mr-4 cursor-pointer" name="copywright" />
             <h5 className="">Cryp</h5>
           </div>
@@ -38,7 +38,7 @@ const DesktopFooter = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center smallLaptop:justify-end bigLaptop:justify-center items-center">
+        <div className="flex justify-center -mt-[1.25rem] bigLaptop:justify-center items-center">
           {Policy.map((policy) => (
             <div className="mr-4 flex items-center" key={policy.id}>
               <CustomLink destination={policy.route}>{policy.name}</CustomLink>

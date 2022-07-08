@@ -25,12 +25,12 @@ const DesktopNavigation = () => {
     <div className={`px-16 w-full py-16 bigLaptop:px-20 flex justify-between items-center scroll-bg ${navBar ? "bg-black" : ""}`}>
       <div className="flex items-center justify-between w-[45%]">
         <CustomLink destination="/">
-          <Icon name="logo" />
+          <Icon className="w-[4.125rem] h-[1.75rem]" name="logo" />
         </CustomLink>
-        <ul className="flex items-center justify-between">
+        <ul className="flex items-center justify-between ml-[2.125rem]">
           {DesktopNav.map((data) => (
             <li className="mx-8 flex items-center " key={data.id}>
-              <CustomLink customClass="capitalize text-16 font-semibold" destination={data.route}>
+              <CustomLink customClass="capitalize text-14 smallLaptop:text-16 bigLaptop:text-18 font-semibold" destination={data.route}>
                 {data.name}
               </CustomLink>
               {data.hasOptions && <Icon className="ml-4 cursor-pointer" name="dropDown" />}
@@ -39,10 +39,10 @@ const DesktopNavigation = () => {
         </ul>
       </div>
       <div className="flex items-center justify-between">
-        <CustomLink customClass="uppercase text-16 font-bold text-crypYellow-200" destination="#">
+        <CustomLink customClass="uppercase text-14 smallLaptop:text-16 bigLaptop:text-18 font-bold text-crypYellow-200 hover:text-crypYellow-300" destination="#">
           join waitlist
         </CustomLink>
-        <Icon className="mx-4 cursor-pointer" name="nigeriaFlag" />
+        <Icon className="ml-12 mr-4 cursor-pointer" name="nigeriaFlag" />
         <Icon className="cursor-pointer" name="dropDown" />
       </div>
     </div>
