@@ -56,11 +56,13 @@ module.exports = {
         crypGreen: {
           100: "#AFEE6E4",
           500: "#6ED7D3",
-          600: "#5abfbc",
+          600: "#5ABFBC",
+          700: "#114443",
           800: "#388F88",
         },
         crypYellow: {
           200: "#F4CA64",
+          300: "#80631C",
         },
         crypMix: {
           200: "#A7EDEA",
@@ -73,6 +75,8 @@ module.exports = {
       backgroundImage: {
         hotel: "url('/images/hero.png')",
         hotel2: "url('/images/hero3.png')",
+        downsizeDesktop: "url('/images/downsize-desktop.png')",
+        downsizeMobile: "url('/images/downsize-mobile.png')",
         crypLocator: "url('/images/crypLocator.png')",
         gradient: "url('/images/gradient.png')",
         daoBg1: "url('/images/daoCommunity/dao1bg.png')",
