@@ -15,8 +15,8 @@ const OurPartners = () => {
           We are trusted and partnered with some of the world’s leading blockchain companies
         </p>
       </div>
-      <div className="grid grid-cols-5 bigLaptop:grid-cols-6 smallLaptop:gap-3 rounded-md smallLaptop:my-8  align-center justify-center px-5 smallLaptop:pl-0">
-        {OurPartnersData.map((partner) => (
+      <div className="grid grid-cols-5  smallLaptop:gap-3 rounded-md smallLaptop:my-8  align-center justify-center px-5 smallLaptop:pl-0">
+        {OurPartnersData.slice(0, 10).map((partner) => (
           <div className="mx-4 relative smallLaptop:mb-8" key={partner.id}>
             <Icon className="mx-auto w-[3.125rem] tablet:w-[4.375rem] smallLaptop:w-[6.25rem]" name={partner.icon} />
           </div>

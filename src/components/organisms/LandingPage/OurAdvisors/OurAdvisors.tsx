@@ -28,7 +28,7 @@ const OurAdvisors = () => {
             </div>
             {active === advisor.id && (
               <div
-                className={`hidden smallLaptop:absolute top-[10%] rounded-[0.625rem] ${
+                className={`hidden smallLaptop:block smallLaptop:absolute top-[10%] rounded-[0.625rem] ${
                   active % 4 === 0 ? "right-[50%]" : "left-[50%]"
                 }  z-10 bg-advisorBg p-5 w-[22.5rem] h-[22.375rem]`}
               >
