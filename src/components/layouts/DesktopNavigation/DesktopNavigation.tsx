@@ -22,10 +22,10 @@ const DesktopNavigation = () => {
   });
 
   return (
-    <div className={`px-16 w-full py-16 bigLaptop:px-20 flex justify-between items-center scroll-bg ${navBar ? "bg-black" : ""}`}>
+    <div className={`px-16 w-full py-[2.5rem] bigLaptop:px-20 flex justify-between items-center scroll-bg ${navBar ? "bg-black" : ""}`}>
       <div className="flex items-center justify-between w-[45%]">
         <CustomLink destination="/">
-          <Icon className="w-[4.125rem] h-[1.75rem]" name="logo" />
+          <Icon className="w-[5.125rem] h-[2.75rem]" name="logo" />
         </CustomLink>
         <ul className="flex items-center justify-between ml-[2.125rem]">
           {DesktopNav.map((data) => (

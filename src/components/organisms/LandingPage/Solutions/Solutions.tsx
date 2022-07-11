@@ -10,10 +10,10 @@ const Solutions = () => {
       <h1 className="text-center capitalize font-semibold text-20 tablet:text-24 smallLaptop:text-[2.938rem] mb-8 smallLaptop:mb-24 leading-[3.438rem] ">
         our solutions for your business
       </h1>
-      <div className="flex tablet:items-center flex-col bigLaptop:flex-row justify-center w-full relative ]">
+      <div className="flex tablet:items-center flex-col smallLaptop:flex-row justify-center w-full relative ]">
         {SolutionsData.map((solution) => (
           <div
-            className="bg-slate-800  rounded-[0.938rem] min-h-[16.563rem] w-[20.063rem] h-auto tablet:w-[80%] smallLaptop:w-[80%]  bigLaptop:w-[36rem] bigLaptop:h-[35.75rem] mx-8 mb-8 bigLaptop:mb-0 p-6 bigLaptop:p-12 relative"
+            className="bg-slate-800  rounded-[0.938rem] min-h-[16.563rem] w-[20.063rem] h-auto tablet:w-[80%] smallLaptop:w-[28rem] bigLaptop:w-[36rem] bigLaptop:h-[35.75rem] mx-8 mb-8 bigLaptop:mb-0 p-6 bigLaptop:p-12 relative"
             key={solution.id}
           >
             <div className="flex justify-between">
@@ -29,7 +29,7 @@ const Solutions = () => {
                 </div>
               )}
             </div>
-            <h2 className="text-37 tablet:text-[6.25rem] font-bold text-right tablet:text-center text-crypGreen-800 uppercase mt-8 tablet:mt-16 mb-12 tablet:mb-16 smallLaptop:mb-20 desktop:mb-12">
+            <h2 className="text-37 tablet:text-[6.25rem] smallLaptop:text-[4.25rem] bigLaptop:text-[6.25rem] font-bold text-right tablet:text-center text-crypGreen-800 uppercase mt-8 tablet:mt-16 mb-12 tablet:mb-16 smallLaptop:mb-20 desktop:mb-12">
               {solution.title}
             </h2>
             <p className="uppercase text-left tablet:text-center text-16 smallLaptop:text-20 font-semibold ">{solution.subHeader}</p>

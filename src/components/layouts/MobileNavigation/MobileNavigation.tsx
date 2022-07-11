@@ -33,7 +33,7 @@ const MobileNavigation = () => {
     <>
       <div className={`flex justify-between py-8 px-10 tablet:px-14 items-center ${navBar || isOpen ? "bg-black" : ""}`}>
         <CustomLink customClass="cursor-pointer mt-4" destination="/">
-          <Icon name="logo" />
+          <Icon className="w-[4.125rem] h-[1.75rem]" name="logo" />
         </CustomLink>
         {isOpen ? (
           <Icon className="cursor-pointer" name="cancel" onClick={() => setIsOpen(false)} />
