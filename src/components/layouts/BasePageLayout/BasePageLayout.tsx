@@ -30,7 +30,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         <meta content={keywords} name="keywords" />
         <link href="/favicon.ico" rel="icon" />
       </Head>
-      <section className="smallLaptop:px-0 relative">
+      <section className="smallLaptop:px-0 relative overflow-x-hidden">
         {showNavigation && (
           <>
             <div className="hidden smallLaptop:block smallLaptop:w-full smallLaptop:fixed smallLaptop:top-0 smallLaptop:z-50">
@@ -51,7 +51,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
               <DesktopFooter />
             </div>
             {!hideFooterOnMobile && (
-              <div className="block w-full smallLaptop:hidden">
+              <div className="block w-full z-50 smallLaptop:hidden">
                 <MobileFooter />
               </div>
             )}

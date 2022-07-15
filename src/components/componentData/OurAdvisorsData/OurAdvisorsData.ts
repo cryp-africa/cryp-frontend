@@ -8,7 +8,7 @@ export const OurAdvisorsData = [
     about: {
       name: "Moerieda Mackay",
       title: "Pioneer Member of The Blockchain Research Institute",
-      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken. Yuccie put a bird on it laborum seitan +1. Qui aute dolor trust fund, snackwave ut jean shorts photo booth quinoa banh mi vinyl brunch.",
+      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken.",
     },
   },
   {
@@ -20,7 +20,7 @@ export const OurAdvisorsData = [
     about: {
       name: "Ali Hussein Kassim",
       title: "Pioneer Member of The Blockchain Research Institute",
-      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken. Yuccie put a bird on it laborum seitan +1. Qui aute dolor trust fund, snackwave ut jean shorts photo booth quinoa banh mi vinyl brunch.",
+      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken.",
     },
   },
   {
@@ -32,7 +32,7 @@ export const OurAdvisorsData = [
     about: {
       name: "Alakanani Itireleng",
       title: "Pioneer Member of The Blockchain Research Institute",
-      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken. Yuccie put a bird on it laborum seitan +1. Qui aute dolor trust fund, snackwave ut jean shorts photo booth quinoa banh mi vinyl brunch.",
+      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken.",
     },
   },
   {
@@ -44,7 +44,7 @@ export const OurAdvisorsData = [
     about: {
       name: "Raj A. Kapoor",
       title: "Pioneer Member of The Blockchain Research Institute",
-      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken. Yuccie put a bird on it laborum seitan +1. Qui aute dolor trust fund, snackwave ut jean shorts photo booth quinoa banh mi vinyl brunch.",
+      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken.",
     },
   },
   {
@@ -56,7 +56,7 @@ export const OurAdvisorsData = [
     about: {
       name: "Christian Duffus",
       title: "Pioneer Member of The Blockchain Research Institute",
-      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken. Yuccie put a bird on it laborum seitan +1. Qui aute dolor trust fund, snackwave ut jean shorts photo booth quinoa banh mi vinyl brunch.",
+      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken.",
     },
   },
   {
@@ -68,7 +68,7 @@ export const OurAdvisorsData = [
     about: {
       name: "Kue Barinor Paul",
       title: "Pioneer Member of The Blockchain Research Institute",
-      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken. Yuccie put a bird on it laborum seitan +1. Qui aute dolor trust fund, snackwave ut jean shorts photo booth quinoa banh mi vinyl brunch.",
+      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken.",
     },
   },
   {
@@ -80,7 +80,7 @@ export const OurAdvisorsData = [
     about: {
       name: "Kue Barinor Paul",
       title: "Pioneer Member of The Blockchain Research Institute",
-      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken. Yuccie put a bird on it laborum seitan +1. Qui aute dolor trust fund, snackwave ut jean shorts photo booth quinoa banh mi vinyl brunch.",
+      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken.",
     },
   },
   {
@@ -92,7 +92,7 @@ export const OurAdvisorsData = [
     about: {
       name: "Kue Barinor Paul",
       title: "Pioneer Member of The Blockchain Research Institute",
-      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken. Yuccie put a bird on it laborum seitan +1. Qui aute dolor trust fund, snackwave ut jean shorts photo booth quinoa banh mi vinyl brunch.",
+      body: "Kogi salvia cillum selvage small batch aliquip seitan DSA bitters. Ad chambray occaecat poutine esse humblebrag XOXO authentic hot chicken.",
     },
   },
 ];

@@ -9,7 +9,7 @@ import { Policy } from "@components/componentData/Footer/Policy";
 import { Products } from "@components/componentData/Footer/Products";
 import { Resources } from "@components/componentData/Footer/Resources";
 import { Socials } from "@components/componentData/Footer/Socials";
-import FooterOptions from "@components/FooterOptions.tsx/FooterOptions";
+import FooterOptions from "@components/FooterOptions.tsx/DesktopFooterOptions";
 
 const DesktopFooter = () => {
   return (
