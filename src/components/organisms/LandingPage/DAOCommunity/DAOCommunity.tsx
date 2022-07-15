@@ -32,7 +32,7 @@ const DaoCommunity = () => {
               </div>
               <div className={`px-2 smallLaptop:p-5 bottom-[0.313rem] h-[40%] w-[169px] smallLaptop:w-full absolute bg-${dao.bg} rounded-md`}>
                 <h3 className="text-12 smallLaptop:text-20 font-medium z-20 uppercase mt-4 smallLaptop:font-semibold !opacity-100">{dao.title}</h3>
-                <CustomLink customClass="hidden smallLaptop:block text-16 z-20 absolute bottom-3 font-semibold text-crypYellow-200 flex items-center" destination="#">
+                <CustomLink customClass="hidden smallLaptop:block text-16 z-20 absolute bottom-3 font-semibold text-crypYellow-200 !flex items-center" destination="#">
                   Read More <Icon className="ml-4" name="yellowArrowRight" />
                 </CustomLink>
               </div>

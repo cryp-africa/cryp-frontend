@@ -38,7 +38,10 @@ const Solutions = () => {
                 {solution.body}
               </p>
             </div>
-            <CustomLink customClass="text-12 smallLaptop:text-16 font-semibold text-crypYellow-200 absolute bottom-7 right-5 tablet:left-10 flex items-center" destination="#">
+            <CustomLink
+              customClass="text-12 hover:text-crypYellow-300 smallLaptop:text-16 font-semibold text-crypYellow-200 absolute bottom-7 right-5 tablet:left-10 flex items-center"
+              destination="#"
+            >
               Explore <Icon className="ml-4" name="yellowArrowRight" />
             </CustomLink>
           </div>

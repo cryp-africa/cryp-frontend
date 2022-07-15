@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Icon from "@components/atoms/Icons";
+import { FooterData } from "@components/componentData/Footer/FooterData";
+import MobileFooterOptions from "@components/FooterOptions.tsx/MobileFooterOptions";
 
 const MobileFooter = () => {
-  return <div>MobileFooter</div>;
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  return (
+    <div className="smallLaptop:hidden flex flex-col text-white opacity-70 justify-between tablet:items-center px-3 tablet:px-10  laptop:px-40 laptop:py-5 drop-shadow-md tabet:h-80">
+      {FooterData.map((data) => (
+        <div className="w-full mb-4 smallLaptop:mt-7" key={data.identifier}>
+          <MobileFooterOptions activeIndex={activeIndex} identifier={data.identifier} logo={data.logo} options={data.options} setActiveIndex={setActiveIndex} title={data.title} />
+        </div>
+      ))}
+      <div className="w-full flex items-center mb-8 smallLaptop:-mt-8">
+        <Icon className="mr-4 cursor-pointer" name="copywright" />
+        <h5 className="">Cryp</h5>
+      </div>
+    </div>
+  );
 };
 
 export default MobileFooter;

@@ -6,7 +6,7 @@ import HomePage from "@components/modules/HomePage/HomePage";
 
 const Home: NextPage = () => {
   return (
-    <BasePageLayout title="Cryp Home Page">
+    <BasePageLayout hideFooterOnMobile={true} title="Cryp Home Page">
       <HomePage />
     </BasePageLayout>
   );

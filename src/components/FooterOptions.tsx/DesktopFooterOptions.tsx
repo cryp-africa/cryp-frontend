@@ -1,12 +1,13 @@
 import React from "react";
-import IFooterOption from "src/dto/Footer/IFooterOption";
 
 import CustomLink from "@components/atoms/CustomLink";
+
+import IDesktopFooterOption from "@dto/Footer/IDesktopFooterOption";
 
 import Icon from "@atoms/Icons/index";
 
 interface FooterOptionsProps {
-  options: Array<IFooterOption>;
+  options: Array<IDesktopFooterOption>;
   title: string;
   hasIcons?: boolean;
 }

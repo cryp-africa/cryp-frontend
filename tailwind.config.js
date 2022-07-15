@@ -53,6 +53,9 @@ module.exports = {
         crypGray: {
           200: "#C5C9CD",
         },
+        glass: {
+          100: "rgba(255, 255, 255, 0.2)",
+        },
         crypGreen: {
           100: "#AFEE6E4",
           500: "#6ED7D3",
@@ -82,7 +85,6 @@ module.exports = {
         daoBg1: "url('/images/daoCommunity/dao1bg.png')",
         daoBg2: "url('/images/daoCommunity/daoBg22.png')",
         daoBg3: "url('/images/daoCommunity/dao3bg.png')",
-        advisorBg: "url('/images/advisors/advisorBg.png')",
       },
     },
   },
