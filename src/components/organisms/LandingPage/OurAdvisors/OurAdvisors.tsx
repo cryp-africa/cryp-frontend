@@ -40,7 +40,7 @@ const OurAdvisors = () => {
                 active === advisor.id ? "showAbout" : "hideAbout"
               } smallLaptop:block relative smallLaptop:absolute top-0 bottom-0 right-0 left-0  z-10 !rounded-none p-2 bigLaptop:p-5 h-[320px]  bigLaptop:h-[310px] television:h-[300px]`}
             >
-              <div className="bg-glass-100 -z-[1] absolute top-0 left-0 backdrop-blur-[100px] h-full w-full" />
+              <div className="bg-glass-100 -z-[1] absolute top-0 left-0 rounded-[10px] backdrop-blur-[100px] h-full w-full" />
               <h4 className="text-20 flex font-semibold mb-4">{advisor.about.name}</h4>
               <p className="text-14 text-left font-medium">{advisor.about.title}</p>
               <p className="text-14 text-left leading-[1.438rem] font-medium mt-8 mb-[1.5rem] w-full">{advisor.about.body}</p>
