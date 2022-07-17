@@ -1,27 +1,22 @@
-import Image from "next/image";
 import React from "react";
 
 import CustomButton from "@components/atoms/CustomButton";
-import CustomLink from "@components/atoms/CustomLink";
-import Icon from "@components/atoms/Icons";
-import { DAOCommunityData } from "@components/componentData/DAOCommunityData/DAOCommunityData";
 
-import { ButtonProperties, slideLeft, slideRight } from "@shared/libs/helpers";
+import { ButtonProperties } from "@shared/libs/helpers";
 
 const DaoCommunity = () => {
   return (
     <div className="flex justify-center items-center relative">
       <div className="relative w-full smallLaptop:w-[76%]">
-        <h3 className="font-semibold text-20 smallLaptop:text-[2.938rem] mb-4 smallLaptop:mb-8 text-center whitespace-nowrap">DAO Community</h3>
+        <h3 className="font-semibold text-20 smallLaptop:text-[2.938rem] mb-4 smallLaptop:mb-8 text-center whitespace-nowrap">Our Decentralised Community</h3>
         <div className="flex items-center justify-center">
           <p className="font-medium text-center text-18 text-white opacity-60 smallLaptop:opacity-70 w-[80%] smallLaptop:w-full bigLaptop:w-[70%] my-8">
-            Sustainable intelligentsia flexitarian prism cillum. Veniam elit vape, reprehenderit bushwick cupidatat tousled slow-carb taxidermy green juice keytar swag occupy
-            cliche. Jean shorts vexillologist affogato truffaut, skateboard mollit est roof party tumeric. DIY esse tofu biodiesel try-hard. Ipsum veniam pabst brunch forage
-            helvetica tumblr roof party gochujang taiyaki man braid palo santo VHS everyday carry mlkshk. Lo-fi franzen gluten-free migas four dollar toast,
+            Join a community of aspiring and existing entrepreneurs, creators (arts, fashion, etc), designers, gig workers and sellers in the social commerce space. We are building
+            a decentralized autonomous community which would be empowered
           </p>
         </div>
 
-        <div className="flex overflow-x-scroll pt-8 smallLaptop:pt-16 bigLaptop:pb-16 hide-scrollbar scroll-smooth flex-nowrap relative" id="dao">
+        {/* <div className="flex overflow-x-scroll pt-8 smallLaptop:pt-16 bigLaptop:pb-16 hide-scrollbar scroll-smooth flex-nowrap relative" id="dao">
           {DAOCommunityData.map((dao) => (
             <div className="mx-4 rounded-[0.75rem] bg-black bg-blend-multiply relative basis-auto smallLaptop:w-[24.313rem] shrink-0 grow-0" key={dao.id}>
               <div className="hidden smallLaptop:block">
@@ -38,17 +33,17 @@ const DaoCommunity = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         <div className="flex justify-center items-center mb-8">
           <CustomButton customClass="mt-12" handleClick={() => {}} size={ButtonProperties.SIZES.small} title="JOIN COMMUNITY" variant={ButtonProperties.VARIANT.primary.name} />
         </div>
       </div>
-      <div className="hidden smallLaptop:block">
+      {/* <div className="hidden smallLaptop:block">
         <Icon className="ml- cursor-pointer absolute top-[52%] right-28 smallLaptop:right-10 bigLaptop:right-28" name="proceed" onClick={() => slideRight("dao", 1200)} />
       </div>
       <div className="hidden smallLaptop:block">
         <Icon className="ml- cursor-pointer absolute top-[52%] left-28 smallLaptop:left-10 bigLaptop:left-28" name="yellowArrowLeft" onClick={() => slideLeft("dao", 1200)} />
-      </div>
+      </div> */}
     </div>
   );
 };

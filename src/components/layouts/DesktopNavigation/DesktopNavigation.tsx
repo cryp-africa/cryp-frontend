@@ -25,7 +25,7 @@ const DesktopNavigation = () => {
     <div className={`px-16 w-full py-[2.5rem] bigLaptop:px-20 flex justify-between items-center scroll-bg ${navBar ? "bg-black" : ""}`}>
       <div className="flex items-center justify-between w-[45%]">
         <CustomLink destination="/">
-          <Icon className="w-[5.125rem] h-[2.75rem]" name="logo" />
+          <Icon className="w-[5.125rem] h-[2.75rem]" name="logoWhite" />
         </CustomLink>
         <ul className="flex items-center justify-between ml-[2.125rem]">
           {DesktopNav.map((data) => (
@@ -43,7 +43,7 @@ const DesktopNavigation = () => {
           join waitlist
         </CustomLink>
         <Icon className="ml-12 mr-4 cursor-pointer" name="nigeriaFlag" />
-        <Icon className="cursor-pointer" name="dropDown" />
+        {/* <Icon className="cursor-pointer" name="dropDown" /> */}
       </div>
     </div>
   );

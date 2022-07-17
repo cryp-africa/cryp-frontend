@@ -24,7 +24,7 @@ const OurAdvisors = () => {
           Our Advisors are a robust group of highly experienced and accomplished leaders in the blockchain system across the world
         </p>
       </div>
-      <div className="grid grid-cols-2 border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] smallLaptop:grid-cols-4 gap-3 my-12 smallLaptop:my-24  align-center justify-center cursor-pointer relative">
+      <div className="grid grid-cols-2 border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] smallLaptop:grid-cols-4 gap-3 smallLaptop:mt-24  align-center justify-center cursor-pointer relative">
         {OurAdvisorsData.map((advisor) => (
           <div className="relative mb-16 mx-4 text-center" id="about" key={advisor.id} onMouseEnter={() => handleHover(advisor.id)} onMouseLeave={() => handleExit()}>
             <Image height={282} src={advisor.image} width={298} />
@@ -38,7 +38,7 @@ const OurAdvisors = () => {
             <div
               className={` hidden ${
                 active === advisor.id ? "showAbout" : "hideAbout"
-              } smallLaptop:block relative smallLaptop:absolute top-0 bottom-0 right-0 left-4  z-10 !rounded-none p-5 w-[300px] h-[282px]`}
+              } smallLaptop:block relative smallLaptop:absolute top-0 bottom-0 right-0 left-0  z-10 !rounded-none p-2 bigLaptop:p-5 h-[320px]  bigLaptop:h-[310px] television:h-[300px]`}
             >
               <div className="bg-glass-100 -z-[1] absolute top-0 left-0 backdrop-blur-[100px] h-full w-full" />
               <h4 className="text-20 flex font-semibold mb-4">{advisor.about.name}</h4>

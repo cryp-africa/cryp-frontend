@@ -4,7 +4,7 @@ export const OurAdvisorsData = [
     name: "Moerieda Mackay",
     lastName: "Mackay",
     position: "Founder & CEO of Stride",
-    image: "/images/advisors/advisor1.png",
+    image: "/images/advisors/nft1.png",
     about: {
       name: "Moerieda Mackay",
       title: "Pioneer Member of The Blockchain Research Institute",
@@ -16,7 +16,7 @@ export const OurAdvisorsData = [
     name: "Ali Hussein Kassim",
     lastName: "Kassim",
     position: "Chairman, Association of Fintechs, Kenya",
-    image: "/images/advisors/advisor2.png",
+    image: "/images/advisors/nft2.png",
     about: {
       name: "Ali Hussein Kassim",
       title: "Pioneer Member of The Blockchain Research Institute",
@@ -28,7 +28,7 @@ export const OurAdvisorsData = [
     name: "Alakanani Itireleng",
     lastName: "Itireleng",
     position: "CEO, Satoshicentre",
-    image: "/images/advisors/advisor3.png",
+    image: "/images/advisors/nft3.png",
     about: {
       name: "Alakanani Itireleng",
       title: "Pioneer Member of The Blockchain Research Institute",
@@ -40,7 +40,7 @@ export const OurAdvisorsData = [
     name: "Raj A. Kapoor",
     lastName: "Kapoor",
     position: "Founder/CEO India Blockchain Alliance",
-    image: "/images/advisors/advisor3.png",
+    image: "/images/advisors/nft4.png",
     about: {
       name: "Raj A. Kapoor",
       title: "Pioneer Member of The Blockchain Research Institute",
@@ -52,7 +52,7 @@ export const OurAdvisorsData = [
     name: "Christian Duffus",
     lastName: "Duffus",
     position: "Founder & CEO Fonbnk",
-    image: "/images/advisors/advisor1.png",
+    image: "/images/advisors/nft5.png",
     about: {
       name: "Christian Duffus",
       title: "Pioneer Member of The Blockchain Research Institute",
@@ -64,7 +64,7 @@ export const OurAdvisorsData = [
     name: "Kue Barinor Paul",
     lastName: "Paul",
     position: "Principal Partner, Blocklex.Tech",
-    image: "/images/advisors/advisor2.png",
+    image: "/images/advisors/nft6.png",
     about: {
       name: "Kue Barinor Paul",
       title: "Pioneer Member of The Blockchain Research Institute",
@@ -76,7 +76,7 @@ export const OurAdvisorsData = [
     name: "Kue Barinor Paul",
     lastName: "Paul",
     position: "Principal Partner, Blocklex.Tech",
-    image: "/images/advisors/advisor3.png",
+    image: "/images/advisors/nft7.png",
     about: {
       name: "Kue Barinor Paul",
       title: "Pioneer Member of The Blockchain Research Institute",
@@ -88,7 +88,7 @@ export const OurAdvisorsData = [
     name: "Kue Barinor Paul",
     lastName: "Paul",
     position: "Principal Partner, Blocklex.Tech",
-    image: "/images/advisors/advisor3.png",
+    image: "/images/advisors/nft8.png",
     about: {
       name: "Kue Barinor Paul",
       title: "Pioneer Member of The Blockchain Research Institute",
