@@ -1,17 +1,45 @@
 export const SolutionsData = [
   {
     id: 1,
-    caption: "payments & remittances",
+    caption1: "PAYMENTS",
+    caption2: "CRYP PAYMENT GATEWAY",
     title: "cpay",
-    subHeader: "cryp payment gateway",
-    body: "Empower your business today when you pay with Cryp",
+    body: "Empower your business today with out limitless payment capabilities",
+    features: [
+      {
+        name: "Business to Business Payments",
+      },
+      {
+        name: "Invoices and payment links to collect payments from your sales on social media",
+      },
+      {
+        name: "Pay button to process payments on your website",
+      },
+      {
+        name: "Donation buttons to manage donations for supporters globally",
+      },
+    ],
   },
   {
     id: 2,
-    caption: "market access & tokenization",
+    caption1: "MARKET",
+    caption2: "CRYP NFT GATEWAY",
     title: "crypnft",
     icon: "rhombus",
-    subHeader: "cryp nft gateway",
-    body: "With both of our Cryp$ or UCryp token options, you can trade with ease ",
+    body: "Access limitless markets for your business with our NFT gateway.",
+    features: [
+      {
+        name: "Mint untility NFTs easily",
+      },
+      {
+        name: "Distribute to preferred or multiple NFT Marketplaces",
+      },
+      {
+        name: "Pay button to process payments on your website",
+      },
+      {
+        name: "List your NFTs on your own storefront",
+      },
+    ],
   },
 ];
