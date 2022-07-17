@@ -23,6 +23,7 @@ interface IMobileFooterOption {
 
 const MobileFooterOptions = ({ options, logo, title, hasIcons, setActiveIndex, activeIndex, identifier }: IMobileFooterOptions) => {
   const [isActive, setIsActive] = useState<boolean>(false);
+  const [isClicked, setIsClicked] = useState<boolean>(false);
   const handleOpen = () => {
     setActiveIndex(identifier);
     setIsActive(true);
@@ -31,17 +32,23 @@ const MobileFooterOptions = ({ options, logo, title, hasIcons, setActiveIndex, a
     setActiveIndex(0);
     setIsActive(false);
   };
+
+  const handleClick = () => {
+    if (!isClicked) {
+      handleOpen();
+      setIsClicked(!isClicked);
+    } else {
+      handleClose();
+      setIsClicked(!isClicked);
+    }
+  };
   return (
     <div className="mb-4 mt-3">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center" onClick={handleClick}>
         <h4 className="font-bold mb-3 text-base tablet:text-xl">{title}</h4>
         <div className="flex items-center">
           <Icon className="mr-4" name={logo} />
-          {isActive && activeIndex === identifier ? (
-            <Icon className="cursor-pointer" name="dropDown" onClick={() => handleClose()} />
-          ) : (
-            <Icon className="cursor-pointer" name="dropDown" onClick={() => handleOpen()} />
-          )}
+          {isActive && activeIndex === identifier ? <Icon className="cursor-pointer" name="dropDown" /> : <Icon className="cursor-pointer" name="dropDown" />}
         </div>
       </div>
 
