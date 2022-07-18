@@ -10,7 +10,7 @@ export const SolutionsData = [
         name: "Business to Business Payments",
       },
       {
-        name: "Invoices and payment links to collect payments from your sales on social media",
+        name: "'Payment links to collect payments from your sales on social media and invoices",
       },
       {
         name: "Pay button to process payments on your website",
