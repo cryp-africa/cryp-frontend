@@ -8,7 +8,7 @@ const DaoCommunity = () => {
   return (
     <div className="flex justify-center items-center relative">
       <div className="relative w-full smallLaptop:w-[76%]">
-        <h3 className="font-semibold text-20 smallLaptop:text-[2.938rem] mb-4 smallLaptop:mb-8 text-center whitespace-nowrap">Our Decentralised Community</h3>
+        <h3 className="font-semibold text-20 smallLaptop:text-[2.938rem] mb-4 smallLaptop:mb-8 text-center whitespace-nowrap">Our Decentralized Community</h3>
         <div className="flex items-center justify-center">
           <p className="font-medium text-center text-18 text-white opacity-60 smallLaptop:opacity-70 w-[80%] smallLaptop:w-full bigLaptop:w-[70%] my-8">
             Join a community of aspiring and existing entrepreneurs, creators (arts, fashion, etc), designers, gig workers and sellers in the social commerce space. We are building
