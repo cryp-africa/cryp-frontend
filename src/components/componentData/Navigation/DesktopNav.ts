@@ -18,6 +18,12 @@ export const DesktopNav = [
     hasOptions: false,
   },
   {
+    id: 6,
+    name: "tokenomics",
+    route: "#",
+    hasOptions: false,
+  },
+  {
     id: 4,
     name: "roadmap",
     route: "#",

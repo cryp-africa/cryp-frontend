@@ -8,7 +8,7 @@ import OurAdvisors from "@components/organisms/LandingPage/OurAdvisors/OurAdviso
 import OurPartners from "@components/organisms/LandingPage/OurPartners/OurPartners";
 import ShowCase from "@components/organisms/LandingPage/ShowCase/ShowCase";
 import Solutions from "@components/organisms/LandingPage/Solutions/Solutions";
-// import News from "@components/organisms/News/News";
+import News from "@components/organisms/News/News";
 
 const HomePage = () => {
   return (
@@ -20,7 +20,7 @@ const HomePage = () => {
       <OurPartners />
       <Media />
       <OurAdvisors />
-      {/* <News /> */}
+      <News />
       <MobileFooter />
     </div>
   );

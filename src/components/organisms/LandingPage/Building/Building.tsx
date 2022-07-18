@@ -11,7 +11,7 @@ const Building = () => {
         <p className="text-[1.255rem] leading-[1.763rem] font-semibold whitespace-nowrap bigLaptop:whitespace-normal tablet:leading-[4rem] smallLaptop:leading-[5rem] desktop:leading-[6.375rem] tablet:text-[2.5rem] smallLaptop:text-[2.813rem] desktop:text-[4rem]  tablet:font-medium">
           Building the operating system for
         </p>
-        <p className="text-[1.255rem] leading-[1.763rem] font-bold tablet:leading-[4rem]  smallLaptop:leading-[5rem] desktop:leading-[6.375rem] tablet:text-[2.5rem] smallLaptop:text-[2.813rem] desktop:text-[4rem] tablet:font-medium">
+        <p className="text-[1.255rem] leading-[1.763rem] font-bold tablet:leading-[4rem] tablet:whitespace-nowrap bigLaptop:whitespace-normal  smallLaptop:leading-[5rem] desktop:leading-[6.375rem] tablet:text-[2.5rem] smallLaptop:text-[2.813rem] desktop:text-[4rem] tablet:font-medium">
           <span className="text-crypGreen-500 font-extrabold">African Businesses</span> on the blockchain
         </p>
         <p className="text-14 tablet:text-16 smallLaptop:text-18 text-white opacity-60 smallLaptop:opacity-70 font-medium w-full tablet:w-[55%] mt-8 smallLaptop:mt-12">

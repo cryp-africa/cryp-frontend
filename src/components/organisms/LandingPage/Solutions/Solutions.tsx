@@ -34,7 +34,7 @@ const Solutions = () => {
                 </div>
               )}
             </div>
-            <h2 className="text-37 tablet:text-[6.25rem] smallLaptop:text-[4.25rem] bigLaptop:text-[6.25rem] font-bold text-right tablet:text-center text-crypGreen-800 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
+            <h2 className="text-37  font-bold text-right tablet:text-center text-crypGreen-800 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
               {solution.title}
             </h2>
             <div className="flex items-center tablet:justify-center">
