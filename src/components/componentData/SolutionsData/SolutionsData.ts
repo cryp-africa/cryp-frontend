@@ -4,7 +4,7 @@ export const SolutionsData = [
     caption1: "PAYMENTS",
     // caption2: "CRYP PAYMENT GATEWAY",
     title: "PAYMENT GATEWAY",
-    body: "Empower your business today with out limitless payment capabilities",
+    body: "Empower your business today with limitless payment capabilities",
     features: [
       {
         name: "Business to Business Payments",
