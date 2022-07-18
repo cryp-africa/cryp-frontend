@@ -12,7 +12,7 @@ const DaoCommunity = () => {
         <div className="flex items-center justify-center">
           <p className="font-medium text-center text-18 text-white opacity-60 smallLaptop:opacity-70 w-[80%] smallLaptop:w-full bigLaptop:w-[70%] my-8">
             Join a community of aspiring and existing entrepreneurs, creators (arts, fashion, etc), designers, gig workers and sellers in the social commerce space. We are building
-            a decentralized autonomous community which would be empowered
+            a decentralized autonomous community which would be empowered.
           </p>
         </div>
 
