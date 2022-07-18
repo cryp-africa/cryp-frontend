@@ -23,7 +23,7 @@ const Solutions = () => {
                 <Icon className="mx-4" name="ellipse" />
                 {/* <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold">{solution.caption2}</h5> */}
               </div>
-              {solution.icon && (
+              {/* {solution.icon && (
                 <div className="hidden tablet:block">
                   <Icon className="absolute right-0 top-0" name="rhombus" />{" "}
                 </div>
@@ -32,7 +32,7 @@ const Solutions = () => {
                 <div className="block tablet:hidden">
                   <Icon className="absolute right-5 top-12" name="mobileRhombus" />{" "}
                 </div>
-              )}
+              )} */}
             </div>
             <h2 className="text-37  font-bold text-right tablet:text-center text-crypGreen-800 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
               {solution.title}
