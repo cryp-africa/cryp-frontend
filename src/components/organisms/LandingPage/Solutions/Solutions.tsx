@@ -21,7 +21,7 @@ const Solutions = () => {
               <div className="flex items-center">
                 <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold">{solution.caption1}</h5>
                 <Icon className="mx-4" name="ellipse" />
-                <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold">{solution.caption2}</h5>
+                {/* <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold">{solution.caption2}</h5> */}
               </div>
               {solution.icon && (
                 <div className="hidden tablet:block">
