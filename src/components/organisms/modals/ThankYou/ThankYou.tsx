@@ -27,11 +27,13 @@ const ThankYou = () => {
       <Dialog.Title as="h4" className="mb-4 capitalize text-[2.313rem] whitespace-nowrap font-semibold mt-8">
         Thank You!
       </Dialog.Title>
-      <p className="capitalize my-16 text-14 w-[80%] text-center font-medium">Want to stay up to date with us? Follow our social media community pages with the links below</p>
+      <p className="capitalize my-8 tablet:my-16 text-14 w-[80%] text-center font-medium">
+        Want to stay up to date with us? Follow our social media community pages with the links below
+      </p>
       <div className="flex p-16">
         {ThankYouData.map((data) => (
           <a href={data.route} key={data.id} rel="noreferrer" target="_blank">
-            <Icon className="mx-4" name={data.name} />
+            <Icon className="w-[2.438rem] h-[2.438rem] tablet:w-[6.313rem] tablet:h-[6.313rem] mx-4" name={data.name} />
           </a>
         ))}
       </div>

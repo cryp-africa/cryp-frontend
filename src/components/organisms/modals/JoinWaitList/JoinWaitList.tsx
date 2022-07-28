@@ -34,12 +34,12 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
   return (
     <div className="flex flex-col justify-center rounded-2xl items-center bg-waitList bg-no-repeat bg-cover bg-center">
       <div className="flex items-center">
-        <Dialog.Title as="h4" className="mb-4 capitalize text-[2.313rem] whitespace-nowrap font-semibold mt-8">
+        <Dialog.Title as="h4" className="mb-4 ml-8 tablet:ml-0 capitalize text-md tablet:text-[2.313rem] whitespace-nowrap font-semibold mt-8">
           Get Notified
         </Dialog.Title>
-        <Icon className="ml-8 mt-6" name="yellowLine" />
+        <Icon className="ml-4 w-[40%] tablet:w-full tablet:ml-8 mt-6" name="yellowLine" />
       </div>
-      <p className="capitalize text-[2.313rem] ml-8">
+      <p className="capitalize text-md tablet:text-[2.313rem] ml-8">
         when <span className="text-crypYellow-200">we launch</span>
       </p>
       <div className="w-full p-8">
@@ -50,7 +50,7 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
                 <div className="mt-8">
                   <FormikCustomInput
                     className="!inline-block !border-b-[1px]"
-                    container="!bg-transparent text-white"
+                    container="!bg-transparent text-white !px-0"
                     inputClassName="!bg-transparent placeholder:!font-medium placeholder:!text-base placeholder:!text-gray-400"
                     name="firstName"
                     placeholder="Enter your firstname here"
@@ -58,7 +58,7 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
                   />
                   <FormikCustomInput
                     className="!inline-block !border-b-[1px] mt-16"
-                    container="!bg-transparent text-white"
+                    container="!bg-transparent text-white !px-0"
                     inputClassName="!bg-transparent placeholder:!font-medium !text-base placeholder:!text-gray-400"
                     name="email"
                     placeholder="Enter your email address here"
@@ -66,9 +66,9 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
                   />
                 </div>
 
-                <div className="bg-citiBlue-200 text-center mt-16 rounded-md w-[12rem] mx-auto">
+                <div className="bg-citiBlue-200 text-center mt-16 rounded-md w-[10.25rem] tablet:w-[12rem] mx-auto">
                   <CustomButton
-                    customClass="!w-full font-14 rounded-md uppercase h-[5rem]"
+                    customClass="!w-full font-14 rounded-md uppercase h-[3.75rem] tablet:h-[5rem]"
                     handleClick={() => {}}
                     isDisabled={loading}
                     isSubmitting={loading}
