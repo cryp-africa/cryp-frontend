@@ -1,6 +1,6 @@
 import React from "react";
 
-import CustomLink from "@components/atoms/CustomLink";
+import CustomLink from "@components/atoms/CustomLink/CustomLink";
 import Icon from "@components/atoms/Icons";
 import { Company } from "@components/componentData/Footer/Company";
 import { Contact } from "@components/componentData/Footer/Contact";

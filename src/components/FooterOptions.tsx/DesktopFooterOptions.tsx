@@ -1,6 +1,6 @@
 import React from "react";
 
-import CustomLink from "@components/atoms/CustomLink";
+import CustomLink from "@components/atoms/CustomLink/CustomLink";
 
 import IDesktopFooterOption from "@dto/Footer/IDesktopFooterOption";
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import CustomLink from "@components/atoms/CustomLink";
+import CustomLink from "@components/atoms/CustomLink/CustomLink";
 import Icon from "@components/atoms/Icons";
 import { DesktopNav } from "@components/componentData/Navigation/DesktopNav";
 

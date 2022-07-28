@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-import CustomLink from "@components/atoms/CustomLink";
+import CustomLink from "@components/atoms/CustomLink/CustomLink";
 import Icon from "@components/atoms/Icons";
 import { OurAdvisorsData } from "@components/componentData/OurAdvisorsData/OurAdvisorsData";
 

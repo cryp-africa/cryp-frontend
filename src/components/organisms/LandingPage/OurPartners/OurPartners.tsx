@@ -1,6 +1,6 @@
 import React from "react";
 
-import CustomButton from "@components/atoms/CustomButton";
+import CustomButton from "@components/atoms/CustomButton/CustomButton";
 import Icon from "@components/atoms/Icons";
 import { OurPartnersData } from "@components/componentData/OurPartnersData/OurPartnersData";
 

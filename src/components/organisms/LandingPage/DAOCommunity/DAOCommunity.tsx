@@ -1,6 +1,6 @@
 import React from "react";
 
-import CustomButton from "@components/atoms/CustomButton";
+import CustomButton from "@components/atoms/CustomButton/CustomButton";
 
 import { ButtonProperties } from "@shared/libs/helpers";
 
