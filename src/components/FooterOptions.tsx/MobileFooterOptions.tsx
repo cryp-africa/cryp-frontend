@@ -58,7 +58,7 @@ const MobileFooterOptions = ({ options, logo, title, hasIcons, setActiveIndex, a
             options.map((data) => (
               <li key={data.id}>
                 <Link href={data.route}>
-                  <a className="text-2xl" href={data.route}>
+                  <a className="text-2xl" href={data.route} rel="noreferrer" target="_blank">
                     {<data.icon />}
                   </a>
                 </Link>
@@ -71,7 +71,9 @@ const MobileFooterOptions = ({ options, logo, title, hasIcons, setActiveIndex, a
             options.map((data) => (
               <li className="mb-8 mt-4 flex justify-between" key={data.id}>
                 <Link href={data.route}>
-                  <a href={data.route}>{data.name}</a>
+                  <a href={data.route} rel="noreferrer" target="_blank">
+                    {data.name}
+                  </a>
                 </Link>
               </li>
             ))}

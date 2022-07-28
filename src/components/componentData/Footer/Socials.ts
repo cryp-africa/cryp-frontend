@@ -2,12 +2,12 @@ export const Socials = [
   {
     id: 1,
     name: "Twitter",
-    route: "#",
+    route: "https://twitter.com/CrypAfrica",
   },
   {
     id: 2,
     name: "Facebook",
-    route: "#",
+    route: "https://www.facebook.com/cryp.africa/",
   },
   {
     id: 3,
@@ -17,6 +17,6 @@ export const Socials = [
   {
     id: 4,
     name: "LinkedIn",
-    route: "#",
+    route: "https://www.linkedin.com/company/cryp-africa/",
   },
 ];

@@ -34,7 +34,12 @@ const DesktopFooter = () => {
           </div>
           {Socials.map((socials) => (
             <div className="mr-4" key={socials.id}>
-              <CustomLink destination={socials.route}>{socials.name}</CustomLink>
+              <a className="cursor-pointer hover:text-crypGreen-500" href={socials.route} rel="noreferrer" target="_blank">
+                {socials.name}
+              </a>
+              {/* <CustomLink destination={socials.route} redirect={true}>
+                {socials.name}
+              </CustomLink> */}
             </div>
           ))}
         </div>

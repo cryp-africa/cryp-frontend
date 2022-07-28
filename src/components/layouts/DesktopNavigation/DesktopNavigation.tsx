@@ -8,7 +8,7 @@ import JoinWaitList from "@components/organisms/JoinWaitList/JoinWaitList";
 
 const DesktopNavigation = () => {
   const [navBar, setNavBar] = useState<boolean>(false);
-  const [joinWaitList, setJoinWaitList] = useState<boolean>(true);
+  const [joinWaitList, setJoinWaitList] = useState<boolean>(false);
 
   const changeBackGround = () => {
     if (window.scrollY > 80) {
