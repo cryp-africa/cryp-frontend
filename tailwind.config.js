@@ -51,6 +51,7 @@ module.exports = {
       },
       colors: {
         crypGray: {
+          100: "#FAFBFC",
           200: "#C5C9CD",
         },
         glass: {
@@ -87,11 +88,12 @@ module.exports = {
         daoBg1: "url('/images/daoCommunity/dao1bg.png')",
         daoBg2: "url('/images/daoCommunity/daoBg22.png')",
         daoBg3: "url('/images/daoCommunity/dao3bg.png')",
+        waitList: "url('/images/waitlist.png')",
       },
     },
   },
   variants: {
     fill: ["hover", "focus"], // this line does the trick
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
