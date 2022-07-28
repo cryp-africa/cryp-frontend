@@ -4,11 +4,13 @@ import CustomLink from "@components/atoms/CustomLink/CustomLink";
 import CustomModal from "@components/atoms/CustomModal/CustomModal";
 import Icon from "@components/atoms/Icons";
 import { DesktopNav } from "@components/componentData/Navigation/DesktopNav";
-import JoinWaitList from "@components/organisms/JoinWaitList/JoinWaitList";
+import JoinWaitList from "@components/organisms/modals/JoinWaitList/JoinWaitList";
+import ThankYou from "@components/organisms/modals/ThankYou/ThankYou";
 
 const DesktopNavigation = () => {
   const [navBar, setNavBar] = useState<boolean>(false);
   const [joinWaitList, setJoinWaitList] = useState<boolean>(false);
+  const [thankYou, setThankYou] = useState<boolean>(true);
 
   const changeBackGround = () => {
     if (window.scrollY > 80) {
@@ -54,7 +56,10 @@ const DesktopNavigation = () => {
         </div>
       </div>
       <CustomModal toggleVisibility={setJoinWaitList} visibility={joinWaitList}>
-        <JoinWaitList />
+        <JoinWaitList setJoinWaitList={setJoinWaitList} setThankYou={setThankYou} />
+      </CustomModal>
+      <CustomModal toggleVisibility={setThankYou} visibility={thankYou}>
+        <ThankYou />
       </CustomModal>
     </>
   );

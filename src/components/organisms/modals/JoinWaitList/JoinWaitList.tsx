@@ -9,7 +9,11 @@ import { JoinWaitListSchema } from "@components/modules/schemas/JoinWaitListSche
 
 import { ButtonProperties } from "@shared/libs/helpers";
 
-const JoinWaitList = () => {
+interface JoinWaitListProps {
+  setThankYou: Function;
+  setJoinWaitList: Function;
+}
+const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
   const [loading, setLoading] = useState<boolean>(false);
   const initialState = {
     firstName: "",
@@ -18,6 +22,8 @@ const JoinWaitList = () => {
 
   const handleSubmit = async (values: Values, actions: FormikHelpers<Values>) => {
     setLoading(true);
+    setJoinWaitList(false);
+    setThankYou(true);
   };
 
   interface Values {
@@ -28,7 +34,7 @@ const JoinWaitList = () => {
   return (
     <div className="flex flex-col justify-center rounded-2xl items-center bg-waitList bg-no-repeat bg-cover bg-center">
       <div className="flex items-center">
-        <Dialog.Title as="h4" className="mb-4 capitalizr text-[2.313rem] whitespace-nowrap font-semibold mt-8">
+        <Dialog.Title as="h4" className="mb-4 capitalize text-[2.313rem] whitespace-nowrap font-semibold mt-8">
           Get Notified
         </Dialog.Title>
         <Icon className="ml-8 mt-6" name="yellowLine" />
