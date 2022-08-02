@@ -1,6 +1,8 @@
 import { Dialog } from "@headlessui/react";
+import axios from "axios";
 import { Form, Formik, FormikHelpers, FormikProps } from "formik";
 import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 import CustomButton from "@components/atoms/CustomButton/CustomButton";
 import FormikCustomInput from "@components/atoms/FormikCustomInput/FormikCustomInput";
@@ -16,23 +18,41 @@ interface JoinWaitListProps {
 const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
   const [loading, setLoading] = useState<boolean>(false);
   const initialState = {
-    firstName: "",
+    name: "",
     email: "",
+    country: "",
   };
 
   const handleSubmit = async (values: Values, actions: FormikHelpers<Values>) => {
     setLoading(true);
-    setJoinWaitList(false);
-    setThankYou(true);
+    try {
+      const res = await axios.post("http://44.202.80.97/subscribe", values, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (res.data.success === true) {
+        setJoinWaitList(false);
+        setThankYou(true);
+      } else {
+        toast.error("An error occurred!");
+        setLoading(false);
+      }
+    } catch (error) {
+      toast.error("An error occurred");
+      setLoading(false);
+    }
   };
 
   interface Values {
-    firstName: string;
+    name: string;
     email: string;
+    country: string;
   }
 
   return (
     <div className="flex flex-col justify-center rounded-2xl items-center bg-waitList bg-no-repeat bg-cover bg-center">
+      <Toaster position="top-right" />
       <div className="flex items-center">
         <Dialog.Title as="h4" className="mb-4 ml-8 tablet:ml-0 capitalize text-md tablet:text-[2.313rem] whitespace-nowrap font-semibold mt-8">
           Get Notified
@@ -52,7 +72,7 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
                     className="!inline-block !border-b-[1px]"
                     container="!bg-transparent text-white !px-0"
                     inputClassName="!bg-transparent placeholder:!font-medium placeholder:!text-base placeholder:!text-gray-400"
-                    name="firstName"
+                    name="name"
                     placeholder="Enter your firstname here"
                     type="text"
                   />
@@ -63,6 +83,14 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
                     name="email"
                     placeholder="Enter your email address here"
                     type="email"
+                  />
+                  <FormikCustomInput
+                    className="!inline-block !border-b-[1px] mt-16"
+                    container="!bg-transparent text-white !px-0"
+                    inputClassName="!bg-transparent placeholder:!font-medium !text-base placeholder:!text-gray-400"
+                    name="country"
+                    placeholder="What country are you from? (Optional)"
+                    type="text"
                   />
                 </div>
 
