@@ -10,7 +10,7 @@ import ThankYou from "@components/organisms/modals/ThankYou/ThankYou";
 const DesktopNavigation = () => {
   const [navBar, setNavBar] = useState<boolean>(false);
   const [joinWaitList, setJoinWaitList] = useState<boolean>(false);
-  const [thankYou, setThankYou] = useState<boolean>(false);
+  const [thankYou, setThankYou] = useState<boolean>(true);
 
   const changeBackGround = () => {
     if (window.scrollY > 80) {

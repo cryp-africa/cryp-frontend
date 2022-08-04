@@ -33,7 +33,7 @@ const ThankYou = () => {
       <div className="flex p-16">
         {ThankYouData.map((data) => (
           <a href={data.route} key={data.id} rel="noreferrer" target="_blank">
-            <Icon className="w-[2.438rem] h-[2.438rem] tablet:w-[6.313rem] tablet:h-[6.313rem] mx-4" name={data.name} />
+            <Icon className="w-[2.449rem] h-[2.449rem] tablet:w-[4.009rem] tablet:h-[4.009rem] mx-4" name={data.name} />
           </a>
         ))}
       </div>
