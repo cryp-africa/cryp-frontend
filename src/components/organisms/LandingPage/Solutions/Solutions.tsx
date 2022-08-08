@@ -10,7 +10,7 @@ const Solutions = () => {
       <h1 className="text-center capitalize font-semibold text-20 tablet:text-24 smallLaptop:text-[2.938rem] mb-8 smallLaptop:mb-24 leading-[3.438rem] ">
         our solutions for your business
       </h1>
-      <div className="flex tablet:items-center flex-col smallLaptop:flex-row justify-center w-full relative ]">
+      <div className="border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] flex tablet:items-center flex-col smallLaptop:flex-row justify-center w-full relative ]">
         {SolutionsData.map((solution) => (
           <div
             className="bg-slate-800 rounded-[0.938rem] min-h-[16.563rem] w-[85%] h-auto tablet:h-[39rem] tablet:w-[80%] smallLaptop:w-[28rem] bigLaptop:w-[36rem] smallLaptop:h-[41.375rem] mx-8 mb-8 bigLaptop:mb-0 p-6 bigLaptop:p-12 relative"

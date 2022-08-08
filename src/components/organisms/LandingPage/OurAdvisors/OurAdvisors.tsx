@@ -40,7 +40,7 @@ const OurAdvisors = () => {
             <div
               className={` hidden ${
                 active === advisor.id ? "showAbout" : "hideAbout"
-              } smallLaptop:block relative smallLaptop:absolute top-0 bottom-0 right-0 left-0  z-10 !rounded-none p-2 bigLaptop:p-5 h-[17.625rem] `}
+              } smallLaptop:block relative smallLaptop:absolute top-0 bottom-0 right-0 left-0  z-10 !rounded-none p-2 bigLaptop:p-5 h-[19.625rem] `}
             >
               <div className="bg-glass-100 -z-[1] absolute top-0 left-0 rounded-[10px] backdrop-blur-[100px] h-full w-full" />
               <h4 className="text-20 flex font-semibold mb-4">{advisor.about.name}</h4>
