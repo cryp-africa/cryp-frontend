@@ -21,9 +21,14 @@ const ThankYouData = [
   },
 ];
 
-const ThankYou = () => {
+interface ThankYouProps {
+  setThankYou: Function;
+}
+
+const ThankYou = ({ setThankYou }: ThankYouProps) => {
   return (
-    <div className="flex flex-col justify-center rounded-2xl items-center bg-waitList bg-no-repeat bg-cover bg-center">
+    <div className="flex flex-col justify-center rounded-2xl items-center bg-waitList bg-no-repeat bg-cover bg-center relative">
+      <Icon className="absolute right-6 top-4 cursor-pointer" name="cancel" onClick={() => setThankYou(false)} />
       <Dialog.Title as="h4" className="mb-4 capitalize text-[2.313rem] whitespace-nowrap font-semibold mt-8">
         Thank You!
       </Dialog.Title>

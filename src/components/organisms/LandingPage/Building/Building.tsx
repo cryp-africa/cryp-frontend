@@ -40,7 +40,7 @@ const Building = () => {
         <JoinWaitList setJoinWaitList={setJoinWaitList} setThankYou={setThankYou} />
       </CustomModal>
       <CustomModal toggleVisibility={setThankYou} visibility={thankYou}>
-        <ThankYou />
+        <ThankYou setThankYou={setThankYou} />
       </CustomModal>
     </>
   );
