@@ -157,7 +157,7 @@ const CustomButton = ({
     <button
       className={`text-${textColor} font-semibold smallLaptop:font-bold rounded-[0.625rem]  hover:border-crypGreen-700 hover:bg-crypGreen-700  border ${
         isTransparent ? `border-${borderColor}` : `border-${background}`
-      }  whitespace-nowrap py-[16px] rounded-[4px] flex justify-center items-center h-[80px] cursor-pointer ${
+      }  whitespace-nowrap py-[16px] rounded-[4px] flex justify-center items-center cursor-pointer ${
         size === ButtonProperties.SIZES.small
           ? "tablet:w-[192px] px-[16px]"
           : size === ButtonProperties.SIZES.medium

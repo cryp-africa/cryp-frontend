@@ -23,7 +23,13 @@ const OurPartners = () => {
         ))}
       </div>
       <div className="flex justify-center items-center mb-8">
-        <CustomButton customClass="my-12" handleClick={() => {}} size={ButtonProperties.SIZES.small} title="PARTNER WITH US" variant={ButtonProperties.VARIANT.primary.name} />
+        <CustomButton
+          customClass="my-12 w-[10.25rem] h-[3.75] bigLaptop:h-[5rem] bigLaptop:w-[12rem]"
+          handleClick={() => {}}
+          size={ButtonProperties.SIZES.small}
+          title="PARTNER WITH US"
+          variant={ButtonProperties.VARIANT.primary.name}
+        />
       </div>
     </div>
   );
