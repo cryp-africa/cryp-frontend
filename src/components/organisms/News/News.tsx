@@ -7,7 +7,7 @@ import { NewsData } from "@components/componentData/NewsData/NewsData";
 
 const News = () => {
   return (
-    <div className="px-5 bigLaptop:px-20">
+    <div className="px-5 mt-16 bigLaptop:px-20">
       {NewsData.map((news) => (
         <div className={`${news.id !== NewsData.length ? "mb-40" : "pb-20 bigLaptop:pb-40"}`} key={news.id}>
           <div className="hidden smallLaptop:text-14 smallLaptop:flex smallLaptop:items-center">
