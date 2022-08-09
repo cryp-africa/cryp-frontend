@@ -20,14 +20,13 @@ const Solutions = () => {
             <div className="flex justify-between">
               <div className="flex items-center">
                 <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold text-white opacity-70">{solution.caption1}</h5>
-                <Icon className="mx-4 opacity-95" name="ellipse" />
               </div>
             </div>
-            <h2 className="text-37  font-bold text-right tablet:text-center text-crypGreen-800 opacity-95 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
+            <h2 className="text-[1.875rem] whitespace-nowrap  font-bold text-center tablet:text-center text-crypGreen-800 opacity-95 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
               {solution.title}
             </h2>
             <div className="flex items-center tablet:justify-center">
-              <p className="text-12 smallLaptop:text-16 text-white opacity-95 text-left tablet:text-center mt-12 mb-12 tablet:mb-12 w-full tablet:w-3/4 font-medium ">
+              <p className="text-12 smallLaptop:text-16 text-white text-center opacity-95 tablet:text-center mt-12 mb-12 tablet:mb-12 w-full tablet:w-3/4 font-medium ">
                 {solution.body}
               </p>
             </div>
