@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 import CustomButton from "@components/atoms/CustomButton/CustomButton";
@@ -6,6 +7,8 @@ import JoinWaitList from "@components/organisms/modals/JoinWaitList/JoinWaitList
 import ThankYou from "@components/organisms/modals/ThankYou/ThankYou";
 
 import { ButtonProperties } from "@shared/libs/helpers";
+
+import CrypLocator from "@images/crypLocator.png";
 
 const Building = () => {
   const [joinWaitList, setJoinWaitList] = useState<boolean>(false);
@@ -31,10 +34,11 @@ const Building = () => {
             variant={ButtonProperties.VARIANT.primary.name}
           />
         </div>
-        {/* <div className="absolute top-40 right-0"> */}
-        {/* <div className=""> */}
-        {/* <Image height={409} src="/images/crypLocator.png" width={1051} />
-      </div> */}
+        <div className="absolute top-40 right-0">
+          <div className="">
+            <Image height={409} src={CrypLocator} width={1051} />
+          </div>
+        </div>
       </div>
       <CustomModal toggleVisibility={setJoinWaitList} visibility={joinWaitList}>
         <JoinWaitList setJoinWaitList={setJoinWaitList} setThankYou={setThankYou} />
