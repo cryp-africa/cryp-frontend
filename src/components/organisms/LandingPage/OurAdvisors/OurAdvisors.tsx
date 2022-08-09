@@ -20,11 +20,12 @@ const OurAdvisors = () => {
     <div className="smallLaptop:mt-28 bigLaptop:px-20">
       <h3 className="font-semibold text-20 tablet:text-[2.938rem] mb-2  smallLaptop:mb-8 text-center">Our Advisors</h3>
       <div className="flex items-center justify-center">
-        <p className="font-medium text-center text-white opacity-60 smallLaptop:opacity-70 text-18 w-[80%] bigLaptop:w-[50%] my-8">
+        <p className="font-medium text-center text-white mb-12 opacity-60 smallLaptop:opacity-70 text-18 w-[80%] bigLaptop:w-[50%] my-8">
           Our Advisors are a robust group of highly experienced and accomplished leaders in the blockchain system across the world
         </p>
       </div>
-      <div className="grid grid-cols-2 border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] smallLaptop:grid-cols-4 gap-3 smallLaptop:mt-24  align-center justify-center cursor-pointer relative">
+      {/* <div className="grid grid-cols-2 border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] smallLaptop:grid-cols-4 gap-3 smallLaptop:mt-24  align-center justify-center cursor-pointer relative"> */}
+      <div className="grid grid-cols-2 pb-5  smallLaptop:grid-cols-4 gap-3 smallLaptop:mt-24  align-center justify-center cursor-pointer relative">
         {OurAdvisorsData.map((advisor) => (
           <div
             className="relative mb-16 tablet:mb-48 mx-4 text-center h-[17.625rem]"

@@ -16,10 +16,12 @@ const HomePage = () => {
       <Building />
       <ShowCase />
       <Solutions />
+      <hr className="border-1 border-[#114443] w-[274px] tablet:w-[1224px] mx-auto mb-12" />
       <DaoCommunity />
       <OurPartners />
       <Media />
       <OurAdvisors />
+      <hr className="border-1 border-[#114443] w-[274px] tablet:w-[1224px] mx-auto mb-12 mt-4" />
       <News />
       <MobileFooter />
     </div>

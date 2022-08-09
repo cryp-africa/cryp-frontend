@@ -13,7 +13,7 @@ interface FooterOptionsProps {
 }
 const FooterOptions = ({ options, title, hasIcons }: FooterOptionsProps) => {
   return (
-    <div className="mt-8">
+    <div className="mt-8 text-white opacity-95">
       <h4 className="font-semibold text-18 mb-8">{title}</h4>
       {hasIcons ? (
         <ul className="flex items-center mb-8">

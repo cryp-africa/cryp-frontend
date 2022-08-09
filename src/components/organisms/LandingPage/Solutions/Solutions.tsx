@@ -6,11 +6,12 @@ import { SolutionsData } from "@components/componentData/SolutionsData/Solutions
 
 const Solutions = () => {
   return (
-    <div className="mb-16 smallLaptop:mb-32 tablet:ml-0">
+    <div className="mb-4 smallLaptop:mb-16 tablet:ml-0">
       <h1 className="text-center capitalize font-semibold text-20 tablet:text-24 smallLaptop:text-[2.938rem] mb-8 smallLaptop:mb-24 leading-[3.438rem] ">
         our solutions for your business
       </h1>
-      <div className="border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] flex tablet:items-center flex-col smallLaptop:flex-row justify-center w-full relative ]">
+      {/* <div className="border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] flex tablet:items-center flex-col smallLaptop:flex-row justify-center w-full relative ]"> */}
+      <div className="pb-5 flex tablet:items-center flex-col smallLaptop:flex-row justify-center w-full relative ">
         {SolutionsData.map((solution) => (
           <div
             className="b-slate-800 rounded-[0.938rem] min-h-[16.563rem] w-[85%] h-auto tablet:h-[39rem] tablet:w-[80%] smallLaptop:w-[28rem] bigLaptop:w-[36rem] smallLaptop:h-[41.375rem] mx-8 mb-8 bigLaptop:mb-0 p-6 bigLaptop:p-12 relative"
@@ -22,7 +23,7 @@ const Solutions = () => {
                 <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold text-white opacity-70">{solution.caption1}</h5>
               </div>
             </div>
-            <h2 className="text-[1.875rem] whitespace-nowrap  font-bold text-center tablet:text-center text-crypGreen-800 opacity-95 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
+            <h2 className="text-[1.563rem] whitespace-nowrap  font-bold text-center tablet:text-center text-crypGreen-800 opacity-95 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
               {solution.title}
             </h2>
             <div className="flex items-center tablet:justify-center">
