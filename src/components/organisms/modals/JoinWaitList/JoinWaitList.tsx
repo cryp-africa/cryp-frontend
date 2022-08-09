@@ -52,7 +52,8 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
   }
 
   return (
-    <div className="flex flex-col justify-center rounded-2xl items-center bg-waitList bg-no-repeat bg-cover bg-center w-[27rem] h-full tablet:w-[41.75rem] tablet:h-[40.5rem]">
+    <div className="flex flex-col relative justify-center rounded-2xl items-center w-[27rem] h-full tablet:w-[41.75rem] tablet:h-[40.5rem]">
+      <div className="bg-glass-100 rounded-[15px] absolute top-0 left-0 backdrop-blur-[100px] h-full w-full" />
       <Toaster position="top-center" />
       <div className="flex items-center relative">
         <Icon className="absolute left-52 tablet:left-80  top-4 cursor-pointer" name="cancel" onClick={() => setJoinWaitList(false)} />
@@ -64,7 +65,7 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
       <p className="capitalize text-md tablet:text-[1.875rem] -ml-16">
         when <span className="text-crypYellow-200">we launch</span>
       </p>
-      <div className="w-full p-4 tablet:p-8">
+      <div className="w-full p-4 tablet:p-8 text-white opacity-95">
         <div className="">
           <Formik initialValues={initialState} onSubmit={handleSubmit} validationSchema={JoinWaitListSchema}>
             {(props: FormikProps<Values>) => (
