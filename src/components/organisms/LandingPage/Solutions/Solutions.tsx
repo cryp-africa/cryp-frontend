@@ -13,40 +13,29 @@ const Solutions = () => {
       <div className="border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] flex tablet:items-center flex-col smallLaptop:flex-row justify-center w-full relative ]">
         {SolutionsData.map((solution) => (
           <div
-            className="bg-slate-800 rounded-[0.938rem] min-h-[16.563rem] w-[85%] h-auto tablet:h-[39rem] tablet:w-[80%] smallLaptop:w-[28rem] bigLaptop:w-[36rem] smallLaptop:h-[41.375rem] mx-8 mb-8 bigLaptop:mb-0 p-6 bigLaptop:p-12 relative"
+            className="b-slate-800 rounded-[0.938rem] min-h-[16.563rem] w-[85%] h-auto tablet:h-[39rem] tablet:w-[80%] smallLaptop:w-[28rem] bigLaptop:w-[36rem] smallLaptop:h-[41.375rem] mx-8 mb-8 bigLaptop:mb-0 p-6 bigLaptop:p-12 relative"
             key={solution.id}
           >
-            {/* <div className="bg-glass-200 rounded-[15px] absolute top-0 left-0 backdrop-blur-[50px] h-full w-full" /> */}
+            <div className="bg-glass-200 rounded-[15px] absolute top-0 left-0 backdrop-blur-[50px] h-full w-full" />
             <div className="flex justify-between">
               <div className="flex items-center">
-                <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold">{solution.caption1}</h5>
-                <Icon className="mx-4" name="ellipse" />
-                {/* <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold">{solution.caption2}</h5> */}
+                <h5 className="uppercase text-12 smallLaptop:text-16 font-semibold text-white opacity-70">{solution.caption1}</h5>
+                <Icon className="mx-4 opacity-95" name="ellipse" />
               </div>
-              {/* {solution.icon && (
-                <div className="hidden tablet:block">
-                  <Icon className="absolute right-0 top-0" name="rhombus" />{" "}
-                </div>
-              )}
-              {solution.icon && (
-                <div className="block tablet:hidden">
-                  <Icon className="absolute right-5 top-12" name="mobileRhombus" />{" "}
-                </div>
-              )} */}
             </div>
-            <h2 className="text-37  font-bold text-right tablet:text-center text-crypGreen-800 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
+            <h2 className="text-37  font-bold text-right tablet:text-center text-crypGreen-800 opacity-95 uppercase mt-8 tablet:mt-16  tablet:mb-4 smallLaptop:mb-20 desktop:mb-8">
               {solution.title}
             </h2>
             <div className="flex items-center tablet:justify-center">
-              <p className="text-12 smallLaptop:text-16 text-white opacity-70 text-left tablet:text-center mt-12 mb-12 tablet:mb-12 w-full tablet:w-3/4 font-medium ">
+              <p className="text-12 smallLaptop:text-16 text-white opacity-95 text-left tablet:text-center mt-12 mb-12 tablet:mb-12 w-full tablet:w-3/4 font-medium ">
                 {solution.body}
               </p>
             </div>
-            <ul>
+            <ul className="text-white opacity-70">
               {solution.features.map((feature, index) => (
-                <li className="flex items-center mb-[24px]" key={index}>
-                  <Icon className="mr-4" name="ellipse" />
-                  <p>{feature.name}</p>
+                <li className="mb-[24px]" key={index}>
+                  <Icon className="mr-4 inline" name="ellipse" />
+                  <span>{feature.name}</span>
                 </li>
               ))}
             </ul>

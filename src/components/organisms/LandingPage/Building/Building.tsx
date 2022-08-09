@@ -9,7 +9,7 @@ import { ButtonProperties } from "@shared/libs/helpers";
 
 const Building = () => {
   const [joinWaitList, setJoinWaitList] = useState<boolean>(false);
-  const [thankYou, setThankYou] = useState<boolean>(true);
+  const [thankYou, setThankYou] = useState<boolean>(false);
   return (
     <>
       <div className="pt-32 bigLaptop:pt-48 pb-16 smallLaptop:pb-36 px-10 bigLaptop:px-4">

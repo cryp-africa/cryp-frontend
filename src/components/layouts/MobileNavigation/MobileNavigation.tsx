@@ -41,9 +41,10 @@ const MobileNavigation = () => {
           <Icon className="cursor-pointer" name="hamburger" onClick={() => setIsOpen(true)} />
         )}
       </div>
-      <ul className={`px-8 tablet:px-12 pb-5 bg-black ${isOpen ? "openNav" : "closeNav"}`} ref={node}>
+      <ul className={`px-8 relative tablet:px-12 pb-5 b-black ${isOpen ? "openNav" : "closeNav"}`} ref={node}>
+        <div className="bg-glass-400 absolute top-0 left-0 backdrop-blur-[50px] h-full w-full" />
         {DesktopNav.map((data) => (
-          <li className="mx-2 mb-8 flex items-center " key={data.id}>
+          <li className="mx-2 mb-8 flex items-center text-white opacity-95" key={data.id}>
             <CustomLink customClass="capitalize text-16 font-semibold" destination={data.route}>
               {data.name}
             </CustomLink>
