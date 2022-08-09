@@ -26,9 +26,15 @@ const OurAdvisors = () => {
       </div>
       <div className="grid grid-cols-2 border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] smallLaptop:grid-cols-4 gap-3 smallLaptop:mt-24  align-center justify-center cursor-pointer relative">
         {OurAdvisorsData.map((advisor) => (
-          <div className="relative mb-48 mx-4 text-center h-[17.625rem]" id="about" key={advisor.id} onMouseEnter={() => handleHover(advisor.id)} onMouseLeave={() => handleExit()}>
+          <div
+            className="relative mb-16 tablet:mb-48 mx-4 text-center h-[17.625rem]"
+            id="about"
+            key={advisor.id}
+            onMouseEnter={() => handleHover(advisor.id)}
+            onMouseLeave={() => handleExit()}
+          >
             <Image height={282} src={advisor.image} width={298} />
-            <h4 className="text-14 smallLaptop:text-16 text-left smallLaptop:text-center  mt-4 font-semibold">{advisor.name}</h4>
+            <h4 className="text-14 smallLaptop:text-16 text-left smallLaptop:text-center  mt-8 font-semibold">{advisor.name}</h4>
             <p className="text-12 smallLaptop:text-14 text-left smallLaptop:text-center mb-8 smallLaptop:mb-0 text-white opacity-70  mt-4 smallLaptop:mt-4 font-medium">
               {advisor.position}
             </p>
