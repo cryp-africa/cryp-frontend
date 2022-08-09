@@ -15,7 +15,7 @@ const DesktopFooter = () => {
   return (
     <div>
       <div className="bg-[#3D4156] relative flex items-baseline justify-between py-16 px-16 bigLaptop:px-20">
-        <div className="bg-glass-100 rounded-[15px] absolute top-0 left-0 backdrop-blur-[100px] h-full w-full" />
+        <div className="bg-glass-100 absolute top-0 left-0 backdrop-blur-[100px] h-full w-full" />
         <FooterOptions options={Products} title="Products" />
         <FooterOptions options={Resources} title="Resources" />
         <FooterOptions options={Developers} title="Developers" />
@@ -23,7 +23,7 @@ const DesktopFooter = () => {
         <FooterOptions options={Contact} title="Contact" />
       </div>
       <div className="bg-[#636476] p-10 text-14 font-medium relative h-[164px]">
-        <div className="bg-glass-500 rounded-[15px] absolute top-0 left-0 backdrop-blur-[150px] h-full w-full" />
+        <div className="bg-glass-500  absolute top-0 left-0 backdrop-blur-[150px] h-full w-full" />
         <div className="flex justify-center items-center pb-16 text-white opacity-95">
           <div className="absolute top-[28%] left-20 smallLaptop:left-16 bigLaptop:left-20 flex items-center ">
             <h5 className="mr-4">Nigeria</h5>
