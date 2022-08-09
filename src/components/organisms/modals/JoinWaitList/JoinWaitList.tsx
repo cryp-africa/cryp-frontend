@@ -62,7 +62,7 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
         </Dialog.Title>
         <Icon className="ml-4 w-[40%] tablet:w-full tablet:ml-8 mt-6" name="yellowLine" />
       </div>
-      <p className="capitalize text-md tablet:text-[1.875rem] -ml-16">
+      <p className="capitalize text-md tablet:text-[1.875rem] -ml-16 opacity-95 text-white">
         when <span className="text-crypYellow-200">we launch</span>
       </p>
       <div className="w-full p-4 tablet:p-8 text-white opacity-95">
