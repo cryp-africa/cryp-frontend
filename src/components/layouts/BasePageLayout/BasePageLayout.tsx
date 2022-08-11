@@ -6,6 +6,8 @@ import MobileNavigation from "@components/layouts/MobileNavigation/MobileNavigat
 import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
 import ParticlesContainer2 from "@components/ParticlesContainer2/ParticlesContainer2";
 
+import { Themes } from "@shared/libs/helpers";
+
 import DesktopFooter from "../DesktopFooter/DesktopFooter";
 import MobileFooter from "../MobileFooter/MobileFooter";
 // import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
@@ -19,9 +21,10 @@ interface BasePageLayout {
   description?: string;
   keywords?: string;
   hideFooterOnMobile?: boolean;
+  theme?: string;
 }
 
-const BasePageLayout = ({ children, showNavigation, showFooter, title, description, keywords, hideFooterOnMobile }: BasePageLayout) => {
+const BasePageLayout = ({ children, theme, showNavigation, showFooter, title, description, keywords, hideFooterOnMobile }: BasePageLayout) => {
   return (
     <div>
       <Head>
@@ -36,7 +39,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
             <div className="hidden smallLaptop:block smallLaptop:w-full smallLaptop:fixed smallLaptop:top-0 smallLaptop:z-50">
               <div className="bg-hotel2 bg-no-repeat h-screen bg-center absolute top-0 bottom-0 -z-[1] bg-cover" />
               <ParticlesContainer />
-              <DesktopNavigation />
+              <DesktopNavigation theme={theme} />
             </div>
             <div className="block w-full top-0 fixed z-50 smallLaptop:hidden">
               <ParticlesContainer2 />
@@ -48,7 +51,7 @@ const BasePageLayout = ({ children, showNavigation, showFooter, title, descripti
         {showFooter && (
           <>
             <div className="hidden smallLaptop:block smallLaptop:w-full">
-              <DesktopFooter />
+              <DesktopFooter theme={theme} />
             </div>
             {!hideFooterOnMobile && (
               <div className="block w-full z-50 smallLaptop:hidden">
@@ -69,6 +72,7 @@ BasePageLayout.defaultProps = {
   description: "A blockchain powered gateway",
   keywords: "crypto, blockchain, cryp, dapp, decentralized",
   hideFooterOnMobile: true,
+  theme: Themes.DARK,
 };
 
 export default BasePageLayout;

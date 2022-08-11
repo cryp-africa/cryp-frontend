@@ -20,7 +20,7 @@ export const DesktopNav = [
   {
     id: 6,
     name: "tokenomics",
-    route: "#",
+    route: "/tokenomics",
     hasOptions: false,
   },
   {

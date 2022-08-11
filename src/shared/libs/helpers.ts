@@ -139,3 +139,11 @@ export const errorMessages = {
   required: "This field is compulsory",
   passwordMatch: "Passwords dont match",
 };
+
+/**
+ * Themes
+ */
+export const Themes = {
+  DARK: "dark",
+  LIGHT: "light",
+};

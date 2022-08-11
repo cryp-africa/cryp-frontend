@@ -4,16 +4,19 @@ import CustomLink from "@components/atoms/CustomLink/CustomLink";
 
 import IDesktopFooterOption from "@dto/Footer/IDesktopFooterOption";
 
+import { Themes } from "@shared/libs/helpers";
+
 import Icon from "@atoms/Icons/index";
 
 interface FooterOptionsProps {
   options: Array<IDesktopFooterOption>;
   title: string;
   hasIcons?: boolean;
+  theme?: string;
 }
-const FooterOptions = ({ options, title, hasIcons }: FooterOptionsProps) => {
+const FooterOptions = ({ options, theme, title, hasIcons }: FooterOptionsProps) => {
   return (
-    <div className="mt-8 text-white opacity-95">
+    <div className={`mt-8  opacity-95 ${theme === Themes.DARK ? "text-white" : "text-black"}`}>
       <h4 className="font-semibold text-18 mb-8">{title}</h4>
       {hasIcons ? (
         <ul className="flex items-center mb-8">
@@ -46,4 +49,5 @@ export default FooterOptions;
 
 FooterOptions.defaultProps = {
   hasIcons: false,
+  theme: Themes.DARK,
 };

@@ -7,7 +7,12 @@ import { DesktopNav } from "@components/componentData/Navigation/DesktopNav";
 import JoinWaitList from "@components/organisms/modals/JoinWaitList/JoinWaitList";
 import ThankYou from "@components/organisms/modals/ThankYou/ThankYou";
 
-const DesktopNavigation = () => {
+import { Themes } from "@shared/libs/helpers";
+
+interface DesktopNavigationProps {
+  theme?: string;
+}
+const DesktopNavigation = ({ theme }: DesktopNavigationProps) => {
   const [navBar, setNavBar] = useState<boolean>(false);
   const [joinWaitList, setJoinWaitList] = useState<boolean>(false);
   const [thankYou, setThankYou] = useState<boolean>(false);
@@ -28,12 +33,16 @@ const DesktopNavigation = () => {
 
   return (
     <>
-      <div className={`px-16 w-full py-[1.5rem] bigLaptop:px-20 flex justify-between items-center scroll-bg ${navBar ? "bg-black" : ""}`}>
+      <div
+        className={`px-16 w-full py-[1.5rem] bigLaptop:px-20 flex justify-between items-center scroll-bg ${
+          navBar && theme === Themes.DARK ? "bg-black" : navBar && theme === Themes.LIGHT ? "bg-white" : ""
+        }`}
+      >
         <div className="flex items-center justify-between bigLaptop:w-[45%]">
           <CustomLink destination="/">
             <Icon className="w-[5.125rem] h-[2.75rem]" name="logo" />
           </CustomLink>
-          <ul className="flex items-center justify-between ml-[2.125rem]">
+          <ul className={`flex items-center justify-between ml-[2.125rem] ${theme === Themes.DARK ? "text-white" : "text-black"}`}>
             {DesktopNav.map((data) => (
               <li className="mx-8 flex items-center " key={data.id}>
                 <CustomLink customClass="capitalize text-14 smallLaptop:text-16 bigLaptop:text-18 font-semibold" destination={data.route}>
@@ -66,3 +75,7 @@ const DesktopNavigation = () => {
 };
 
 export default DesktopNavigation;
+
+DesktopNavigation.defaultProps = {
+  theme: Themes.DARK,
+};
