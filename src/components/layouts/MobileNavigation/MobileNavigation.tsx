@@ -6,7 +6,13 @@ import { DesktopNav } from "@components/componentData/Navigation/DesktopNav";
 
 import useClickOutside from "@hooks/useClickOutside";
 
-const MobileNavigation = () => {
+import { Themes } from "@shared/libs/helpers";
+
+interface MobileNavigationProps {
+  theme?: string;
+}
+
+const MobileNavigation = ({ theme }: MobileNavigationProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const node = useClickOutside(() => {
@@ -37,8 +43,10 @@ const MobileNavigation = () => {
         </CustomLink>
         {isOpen ? (
           <Icon className="cursor-pointer" name="cancel" onClick={() => setIsOpen(false)} />
-        ) : (
+        ) : theme === Themes.DARK ? (
           <Icon className="cursor-pointer" name="hamburger" onClick={() => setIsOpen(true)} />
+        ) : (
+          <Icon className="cursor-pointer" name="hamburgerBlack" onClick={() => setIsOpen(true)} />
         )}
       </div>
       <ul className={`px-8 pt-8 relative tablet:px-12 pb-5 b-black ${isOpen ? "openNav" : "closeNav"}`} ref={node}>
@@ -57,3 +65,7 @@ const MobileNavigation = () => {
 };
 
 export default MobileNavigation;
+
+MobileNavigation.defaultProps = {
+  theme: Themes.DARK,
+};

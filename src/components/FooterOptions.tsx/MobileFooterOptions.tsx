@@ -3,6 +3,8 @@ import React, { useState } from "react";
 
 import Icon from "@components/atoms/Icons";
 
+import { Themes } from "@shared/libs/helpers";
+
 interface IMobileFooterOptions {
   options?: Array<IMobileFooterOption>;
   title: string;
@@ -11,6 +13,7 @@ interface IMobileFooterOptions {
   setActiveIndex: Function;
   identifier: number;
   logo?: any;
+  theme?: string;
 }
 
 interface IMobileFooterOption {
@@ -21,7 +24,7 @@ interface IMobileFooterOption {
   hasIcons?: boolean;
 }
 
-const MobileFooterOptions = ({ options, logo, title, hasIcons, setActiveIndex, activeIndex, identifier }: IMobileFooterOptions) => {
+const MobileFooterOptions = ({ options, theme, logo, title, hasIcons, setActiveIndex, activeIndex, identifier }: IMobileFooterOptions) => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const [isClicked, setIsClicked] = useState<boolean>(false);
   const handleOpen = () => {
@@ -43,12 +46,21 @@ const MobileFooterOptions = ({ options, logo, title, hasIcons, setActiveIndex, a
     }
   };
   return (
-    <div className="mb-4 mt-3">
+    <div className={`mb-4 mt-3 ${theme === Themes.DARK ? "" : "text-black"}`}>
       <div className="flex justify-between items-center" onClick={handleClick}>
         <h4 className="font-bold mb-3 text-base tablet:text-xl">{title}</h4>
         <div className="flex items-center">
           <Icon className="mr-4" name={logo} />
-          {isActive && activeIndex === identifier ? <Icon className="cursor-pointer" name="dropDown" /> : <Icon className="cursor-pointer" name="dropDown" />}
+          {theme === Themes.DARK && isActive && activeIndex === identifier ? (
+            <Icon className="cursor-pointer" name="dropDown" />
+          ) : theme === Themes.DARK ? (
+            <Icon className="cursor-pointer" name="dropDown" />
+          ) : null}
+          {theme === Themes.LIGHT && isActive && activeIndex === identifier ? (
+            <Icon className="cursor-pointer" name="dropDownBlack" />
+          ) : theme === Themes.LIGHT ? (
+            <Icon className="cursor-pointer" name="dropDownBlack" />
+          ) : null}
         </div>
       </div>
 
@@ -89,4 +101,5 @@ MobileFooterOptions.defaultProps = {
   hasIcons: false,
   options: null,
   logo: "",
+  theme: Themes.DARK,
 };

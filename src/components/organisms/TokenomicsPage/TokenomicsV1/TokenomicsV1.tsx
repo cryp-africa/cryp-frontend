@@ -7,8 +7,8 @@ import { UtilityData } from "@components/componentData/TokenomicsV1Data/UtilityD
 
 const TokenomicsV1 = () => {
   return (
-    <div className="text-black text-base font-medium pb-20">
-      <h2 className="text-37 font-bold text-center mb-20 mt-8">Cryp Version 1.0</h2>
+    <div className="text-black text-base font-medium tablet:pb-20">
+      <h2 className="text-20 tablet:text-37 font-bold text-center mb-8 tablet:mb-20 tablet:mt-8">Cryp Version 1.0</h2>
       <div className="w-[90%]">
         <p className="font-bold mb-8">The Cryp ecosystem would be made up of 3 class of tokens, namely:</p>
         <ul>
@@ -25,7 +25,7 @@ const TokenomicsV1 = () => {
       </div>
       <div className="w-[90%]">
         <h2 className="font-bold mb-4 mt-8">Tokenomics of Cryp$ (CPUSD)</h2>
-        <p className="text-14 font-normal mb-6 ml-12">
+        <p className="text-14 font-normal mb-6 smallLaptop:ml-12">
           <span className="font-bold mr-2 text-base">Cryp$ (CPUSD):</span> A proxy stable coin to BUSD CPUSD is created when dollars are deposited in the CRYP collections escrow
           account (either via merchant settlements/remittance or by direct purchase) and in cases of non-settlement cpUSD purchases,. BUSD is purchased to collaterize the issued
           cpUSD, thereby creating an equivalent supply of cpUSD that is introduced in circulation.

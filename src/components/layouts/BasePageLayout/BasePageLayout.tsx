@@ -43,7 +43,7 @@ const BasePageLayout = ({ children, theme, showNavigation, showFooter, title, de
             </div>
             <div className="block w-full top-0 fixed z-50 smallLaptop:hidden">
               <ParticlesContainer2 />
-              <MobileNavigation />
+              <MobileNavigation theme={theme} />
             </div>
           </>
         )}
