@@ -26,7 +26,7 @@ const JoinWaitList = ({ setThankYou, setJoinWaitList }: JoinWaitListProps) => {
   const handleSubmit = async (values: Values, actions: FormikHelpers<Values>) => {
     setLoading(true);
     try {
-      const res = await axios.post("http://44.202.80.97/subscribe", values, {
+      const res = await axios.post("https://app.cryp.africa/subscribe", values, {
         headers: {
           "Content-Type": "application/json",
         },
