@@ -18,6 +18,9 @@ export const SolutionsData = [
       {
         name: "Donation buttons to manage donations for supporters globally",
       },
+      {
+        name: "Process crypto payments both on the web and with USSD",
+      },
     ],
   },
   {
