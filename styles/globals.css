@@ -17,6 +17,19 @@
   animation: closeNav 0.5s ease-out;
 }
 
+#nprogress .bar {
+  background: #388f88 !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #388f88, 0 0 5px #388f88 !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #388f88 !important;
+  border-left-color: #388f88 !important;
+}
+
 @keyframes openNav {
   0% {
     height: 0px;

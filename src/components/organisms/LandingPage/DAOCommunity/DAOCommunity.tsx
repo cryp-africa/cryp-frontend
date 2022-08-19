@@ -5,6 +5,9 @@ import CustomButton from "@components/atoms/CustomButton/CustomButton";
 import { ButtonProperties } from "@shared/libs/helpers";
 
 const DaoCommunity = () => {
+  const handleJoinCommunity = () => {
+    window.open("https://t.me/CrypAfrica", "_blank");
+  };
   return (
     <div className="flex justify-center items-center relative">
       <div className="relative w-full smallLaptop:w-[76%]">
@@ -37,7 +40,7 @@ const DaoCommunity = () => {
         <div className="flex justify-center items-center mb-8">
           <CustomButton
             customClass="mt-12 w-[10.25rem] h-[3.75] bigLaptop:h-[5rem] bigLaptop:w-[12rem]"
-            handleClick={() => {}}
+            handleClick={handleJoinCommunity}
             size={ButtonProperties.SIZES.small}
             title="JOIN COMMUNITY"
             variant={ButtonProperties.VARIANT.primary.name}
