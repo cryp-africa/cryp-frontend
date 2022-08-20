@@ -7,6 +7,9 @@ export const SolutionsData = [
     body: "Empower your business today with limitless payment capabilities",
     features: [
       {
+        name: "Process crypto payments both on the web and with USSD",
+      },
+      {
         name: "Business to Business Payments",
       },
       {
@@ -17,9 +20,6 @@ export const SolutionsData = [
       },
       {
         name: "Donation buttons to manage donations for supporters globally",
-      },
-      {
-        name: "Process crypto payments both on the web and with USSD",
       },
     ],
   },
