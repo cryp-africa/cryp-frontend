@@ -12,16 +12,18 @@ import Solutions from "@components/organisms/LandingPage/Solutions/Solutions";
 
 const HomePage = () => {
   return (
-    <div className="tablet:px-4 smallLaptop:px-18 desktop:px-16 bg-downsizeMobile smallLaptop:bg-downsizeDesktop bg-cover bg-center bg-no-repeat">
-      <Building />
-      <ShowCase />
-      <Solutions />
-      <hr className="border-1 border-[#114443] w-[274px] tablet:w-[1224px] mx-auto mb-12" />
-      <DaoCommunity />
-      <OurPartners />
-      <Media />
-      <OurAdvisors />
-      <hr className="border-1 border-[#114443] w-[274px] tablet:w-[1224px] mx-auto mt-4" />
+    <div className="bg-downsizeMobile smallLaptop:bg-downsizeDesktop bg-cover bg-center bg-no-repeat text-white">
+      <div className="max-w-[90rem] mx-auto">
+        <Building />
+        <ShowCase />
+        <Solutions />
+        <hr className="border-1 border-[#114443] w-[17.125rem] tablet:w-[76.5rem] mx-auto mb-12" />
+        <DaoCommunity />
+        <OurPartners />
+        <Media />
+        <OurAdvisors />
+        <hr className="border-1 border-[#114443] w-[17.125rem] tablet:w-[76.5rem] mx-auto mt-4" />
+      </div>
       {/* <News /> */}
       <MobileFooter />
     </div>

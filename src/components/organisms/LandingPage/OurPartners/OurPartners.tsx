@@ -8,7 +8,7 @@ import { ButtonProperties } from "@shared/libs/helpers";
 
 const OurPartners = () => {
   return (
-    <div className="mt-16 smallLaptop:mt-28 bigLaptop:px-20">
+    <div className="mt-16 smallLaptop:mt-28">
       <h3 className="font-semibold text-20 smallLaptop:text-[2.938rem] mb-8 whitespace-nowrap text-center">Our Partners</h3>
       <div className="flex items-center justify-center">
         <p className="font-medium text-center text-white opacity-60 smallLaptop:opacity-70 text-18 w-[80%] bigLaptop:w-[40%] mt-2 mb-8 smallLaptop:my-8">

@@ -1,7 +1,7 @@
 export const MediaData = [
   {
     id: 3,
-    icon: "bbc",
+    icon: "techCabal",
   },
   {
     id: 4,

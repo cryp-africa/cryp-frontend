@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import CustomLink from "@components/atoms/CustomLink/CustomLink";
-import CustomModal from "@components/atoms/CustomModal/CustomModal";
 import Icon from "@components/atoms/Icons";
 import { DesktopNav } from "@components/componentData/Navigation/DesktopNav";
-import JoinWaitList from "@components/organisms/modals/JoinWaitList/JoinWaitList";
-import ThankYou from "@components/organisms/modals/ThankYou/ThankYou";
 
 import { Themes } from "@shared/libs/helpers";
 
@@ -14,8 +11,6 @@ interface DesktopNavigationProps {
 }
 const DesktopNavigation = ({ theme }: DesktopNavigationProps) => {
   const [navBar, setNavBar] = useState<boolean>(false);
-  const [joinWaitList, setJoinWaitList] = useState<boolean>(false);
-  const [thankYou, setThankYou] = useState<boolean>(false);
 
   const changeBackGround = () => {
     if (window.scrollY > 80) {
@@ -32,12 +27,12 @@ const DesktopNavigation = ({ theme }: DesktopNavigationProps) => {
   });
 
   return (
-    <>
-      <div
-        className={`px-16 w-full py-[1.5rem] bigLaptop:px-20 flex justify-between items-center scroll-bg ${
-          navBar && theme === Themes.DARK ? "bg-black" : navBar && theme === Themes.LIGHT ? "bg-white" : ""
-        }`}
-      >
+    <div
+      className={` w-full scroll-bg ${navBar && theme === Themes.DARK ? "bg-black" : navBar && theme === Themes.LIGHT && "bg-white"} ${
+        theme === Themes.DARK ? "bg-dark" : "bg-white"
+      }`}
+    >
+      <div className="max-w-[90rem] py-[1.5rem] pl-[3.125rem] pr-[5.375rem]  mx-auto flex justify-between items-center">
         <div className="flex items-center justify-between bigLaptop:w-[45%]">
           <CustomLink destination="/">
             <Icon className="w-[5.125rem] h-[2.75rem]" name="logo" />
@@ -54,23 +49,10 @@ const DesktopNavigation = ({ theme }: DesktopNavigationProps) => {
           </ul>
         </div>
         <div className="flex items-center justify-between">
-          <p
-            className=" cursor-pointer uppercase text-14 smallLaptop:text-16 bigLaptop:text-18 font-bold text-crypYellow-200 hover:text-crypYellow-300"
-            onClick={() => setJoinWaitList(true)}
-          >
-            join waitlist
-          </p>
-          <Icon className="ml-12 mr-4 cursor-pointer" name="nigeriaFlag" />
-          {/* <Icon className="cursor-pointer" name="dropDown" /> */}
+          <p className=" cursor-pointer uppercase text-14 smallLaptop:text-16 bigLaptop:text-18 font-bold text-crypYellow-200 hover:text-crypYellow-300">sign in</p>
         </div>
       </div>
-      <CustomModal toggleVisibility={setJoinWaitList} visibility={joinWaitList}>
-        <JoinWaitList setJoinWaitList={setJoinWaitList} setThankYou={setThankYou} />
-      </CustomModal>
-      <CustomModal toggleVisibility={setThankYou} visibility={thankYou}>
-        <ThankYou setThankYou={setThankYou} />
-      </CustomModal>
-    </>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@ import { UtilityData } from "@components/componentData/TokenomicsV1Data/UtilityD
 
 const TokenomicsV1 = () => {
   return (
-    <div className="text-black text-base font-medium tablet:pb-20">
+    <div className="text-black text-base font-medium px-[1.25rem] pb-[5.625rem] pt-[5.625rem] tablet:pt-[6.25rem] tablet:pb-[3.125rem] tablet:px-[4.375rem] smallLaptop:px-[6.25rem] smallLaptop:pt-[7.5rem]  bigLaptop:px-[11.25rem] bigLaptop:pt-[11.25rem] bigLaptop:pb-[7.188rem]">
       <h2 className="text-20 tablet:text-37 font-bold text-center mb-8 tablet:mb-20 tablet:mt-8">Cryp Version 1.0</h2>
       <div className="w-[90%]">
         <p className="font-bold mb-8">The Cryp ecosystem would be made up of 3 class of tokens, namely:</p>

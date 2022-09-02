@@ -91,6 +91,8 @@ module.exports = {
         daoBg2: "url('/images/daoCommunity/daoBg22.png')",
         daoBg3: "url('/images/daoCommunity/dao3bg.png')",
         waitList: "url('/images/waitlist.png')",
+        learn1: "url('/images/learn/learn1.png')",
+        learn2: "url('/images/learn/learn2.png')",
       },
     },
   },

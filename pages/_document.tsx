@@ -21,7 +21,7 @@ class MyDocument extends Document {
           <link href="https://fonts.gstatic.com" rel="preconnect" />
           <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet" />
         </Head>
-        <body className="box-border text-white bg-black">
+        <body className="box-border">
           <Main />
           <NextScript />
         </body>

@@ -17,7 +17,7 @@ const OurAdvisors = () => {
   };
 
   return (
-    <div className="smallLaptop:mt-28 bigLaptop:px-20">
+    <div className="smallLaptop:mt-28">
       <h3 className="font-semibold text-20 tablet:text-[2.938rem] mb-2  smallLaptop:mb-8 text-center">Our Advisors</h3>
       <div className="flex items-center justify-center">
         <p className="font-medium text-center text-white mb-12 opacity-60 smallLaptop:opacity-70 text-18 w-[80%] bigLaptop:w-[50%] my-8">

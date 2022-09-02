@@ -5,7 +5,7 @@ import { MediaData } from "@components/componentData/MediaData/MediaData";
 
 const Media = () => {
   return (
-    <div className="smallLaptop:mt-28  smallLaptop:px-20">
+    <div className="smallLaptop:mt-28">
       <h3 className="font-semibold text-20 smallLaptop:text-[2.938rem] text-center">Media</h3>
       <div className="flex items-center justify-center">
         <p className="font-medium text-center text-white opacity-70 text-18 bigLaptop:w-[30%] mt-8 whitespace-nowrap">As mentioned in:</p>

@@ -9,7 +9,7 @@ import { Themes } from "@shared/libs/helpers";
 
 const TokenomicsPage = () => {
   return (
-    <div className="px-5 smallLaptop:px-20 desktop:px-56 bg-white television:flex television:flex-col television:justify-center television:items-center">
+    <div className="max-w-[90rem] mx-auto bg-white television:flex television:flex-col television:justify-center television:items-center">
       <TokenomicsImg />
       <div className="mx-auto w-full">
         <TokenomicsV1 />

@@ -8,7 +8,7 @@ export const DesktopNav = [
   {
     id: 2,
     name: "learn",
-    route: "#",
+    route: "/learn",
     hasOptions: false,
   },
   {

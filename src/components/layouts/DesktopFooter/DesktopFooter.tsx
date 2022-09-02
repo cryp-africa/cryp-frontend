@@ -19,23 +19,25 @@ interface DesktopFooterProps {
 const DesktopFooter = ({ theme }: DesktopFooterProps) => {
   return (
     <div>
-      <div className={`${theme === Themes.DARK ? "bg-[#3D4156]" : "bg-[#F0FCFB]"} relative flex items-baseline justify-between py-16 px-16 bigLaptop:px-20`}>
+      <div className={`${theme === Themes.DARK ? "bg-[#3D4156]" : "bg-[#F0FCFB]"} relative `}>
         {theme === Themes.DARK && <div className="bg-glass-100 absolute top-0 left-0 backdrop-blur-[100px] h-full w-full" />}
-        <FooterOptions options={Products} theme={theme} title="Products" />
-        <FooterOptions options={Resources} theme={theme} title="Resources" />
-        <FooterOptions options={Developers} theme={theme} title="Developers" />
-        <FooterOptions options={Company} theme={theme} title="Company" />
-        <FooterOptions options={Contact} theme={theme} title="Contact" />
+        <div className="max-w-[90rem] mx-auto flex items-baseline justify-between py-16 pl-[3.25rem] pr-8 relative">
+          <FooterOptions options={Products} theme={theme} title="Products" />
+          <FooterOptions options={Resources} theme={theme} title="Resources" />
+          <FooterOptions options={Developers} theme={theme} title="Developers" />
+          <FooterOptions options={Company} theme={theme} title="Company" />
+          <FooterOptions options={Contact} theme={theme} title="Contact" />
+        </div>
       </div>
       <div className={`${theme === Themes.DARK ? "bg-[#636476]" : "bg-[#F6F6F6]"}   p-10 text-14 font-medium relative h-[164px]`}>
         <div className="bg-glass-500  absolute top-0 left-0 backdrop-blur-[150px] h-full w-full" />
-        <div className={`flex justify-center items-center pb-16 ${theme === Themes.DARK ? "text-white" : "text-black"} opacity-95`}>
-          <div className="absolute top-[28%] left-20 smallLaptop:left-16 bigLaptop:left-20 flex items-center ">
+        <div className={`flex justify-center items-center pb-16 ${theme === Themes.DARK ? "text-white" : "text-black"} opacity-95 max-w-[90rem] mx-auto relative`}>
+          <div className="absolute top-0 left-[3.188rem] flex items-center ">
             <h5 className="mr-4">Nigeria</h5>
             <Icon className="mr-4 cursor-pointer" name="nigeriaFlag" />
             <Icon className="cursor-pointer" name="dropDown" />
           </div>
-          <div className="absolute bottom-[20%] left-20 smallLaptop:left-16 bigLaptop:left-20 flex items-center ">
+          <div className="absolute bottom-0 left-[3.188rem] flex items-center ">
             <Icon className="mr-4 cursor-pointer" name={`${theme === Themes.DARK ? "copywright" : "copywrightLight"}`} />
             <h5 className="">Cryp</h5>
           </div>

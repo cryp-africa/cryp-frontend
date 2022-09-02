@@ -14,7 +14,7 @@ const Solutions = () => {
       <div className="pb-5 flex tablet:items-center flex-col smallLaptop:flex-row justify-center w-full relative ">
         {SolutionsData.map((solution) => (
           <div
-            className="b-slate-800 rounded-[0.938rem] min-h-[16.563rem] w-[85%] h-auto tablet:h-[39rem] tablet:w-[80%] smallLaptop:w-[28rem] bigLaptop:w-[36rem] smallLaptop:h-[41.375rem] mx-8 mb-8 bigLaptop:mb-0 p-6 bigLaptop:p-12 relative"
+            className="b-slate-800 rounded-[0.938rem] min-h-[16.563rem] w-[85%] h-auto tablet:h-[39rem] tablet:w-[80%] smallLaptop:w-[28rem] bigLaptop:w-[36rem] smallLaptop:h-[41.375rem] mx-[2.25rem] mb-8 bigLaptop:mb-0 p-6 bigLaptop:p-12 relative"
             key={solution.id}
           >
             <div className="bg-glass-200 rounded-[15px] absolute top-0 left-0 backdrop-blur-[50px] h-full w-full" />
