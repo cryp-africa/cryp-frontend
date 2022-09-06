@@ -93,6 +93,7 @@ module.exports = {
         waitList: "url('/images/waitlist.png')",
         learn1: "url('/images/learn/learn1.png')",
         learn2: "url('/images/learn/learn2.png')",
+        learn3: "url('/images/learn/learn3.png')",
       },
     },
   },
