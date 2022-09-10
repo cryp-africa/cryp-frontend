@@ -12,7 +12,7 @@ import Solutions from "@components/organisms/LandingPage/Solutions/Solutions";
 
 const HomePage = () => {
   return (
-    <div className="bg-downsizeMobile smallLaptop:bg-downsizeDesktop bg-cover bg-center bg-no-repeat text-white">
+    <div className="bg-downsizeMobile smallLaptop:bg-downsizeDesktop bg-cover bg-center bg-no-repeat text-white bg-black">
       <div className="max-w-[90rem] mx-auto">
         <Building />
         <ShowCase />
