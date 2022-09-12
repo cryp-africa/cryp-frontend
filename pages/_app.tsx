@@ -38,14 +38,14 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       {/* <GoogleAnalytics trackPageViews /> */}
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} strategy="lazyOnload" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-4V2QZ9EVWQ" strategy="lazyOnload" />
       <Script strategy="lazyOnload">
         {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', ${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID});
+            gtag('config', 'G-4V2QZ9EVWQ');
           `}
       </Script>
       <Component {...pageProps} />
