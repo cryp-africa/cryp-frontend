@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import Router from "next/router";
-import Script from "next/script";
-// import { GoogleAnalytics } from "nextjs-google-analytics";
+// import Script from "next/script";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import NProgress from "nprogress";
 import React from "react";
 
@@ -37,8 +37,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
-      {/* <GoogleAnalytics trackPageViews /> */}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-4V2QZ9EVWQ" strategy="lazyOnload" />
+      <GoogleAnalytics trackPageViews />
+      {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-4V2QZ9EVWQ" strategy="lazyOnload" />
       <Script strategy="lazyOnload">
         {`
             window.dataLayer = window.dataLayer || [];
@@ -47,7 +47,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
             gtag('config', 'G-4V2QZ9EVWQ');
           `}
-      </Script>
+      </Script> */}
       <Component {...pageProps} />
     </>
   );
