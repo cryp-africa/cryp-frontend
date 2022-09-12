@@ -25,6 +25,7 @@
     "eslint-plugin-import-helpers": "^1.2.1",
     "formik": "^2.2.9",
     "next": "12.1.6",
+    "nextjs-google-analytics": "^2.1.0",
     "nprogress": "^0.2.0",
     "prettier": "^2.7.0",
     "react": "18.2.0",

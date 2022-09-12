@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import Router from "next/router";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import NProgress from "nprogress";
 import React from "react";
 
@@ -23,7 +24,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   Router.events.on("routeChangeComplete", () => NProgress.done());
   Router.events.on("routeChangeError", () => NProgress.done());
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <GoogleAnalytics trackPageViews />
+      <Component {...pageProps} />
+    </>
+  );
 };
 
 export default MyApp;
