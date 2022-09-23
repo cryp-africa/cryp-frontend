@@ -100,7 +100,7 @@
   border-radius: 50%;
   background: #388f88;
   margin: 0 6px 0 0;
-  animation: oscillate 0.7s ease-in forwards infinite;
+  animation: oscillate 0.1s ease-in forwards infinite;
 }
 
 .one {

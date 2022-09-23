@@ -25,50 +25,36 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   Router.events.on("routeChangeStart", () => NProgress.start());
   Router.events.on("routeChangeComplete", () => NProgress.done());
   Router.events.on("routeChangeError", () => NProgress.done());
-
   const [loading, setLoading] = React.useState(true);
 
-  // React.useEffect(() => {
-  //   const preloadImages = new Promise((resolve, reject) => {
-  //     // if (typeof window !== "undefined") {
-  //     imagesLoaded(document.querySelectorAll("img"), { background: true }, resolve);
-  //     // }
-  //   });
-  //   const allDone = [preloadImages];
-  //   Promise.all(allDone).then(() => {
-  //     setLoading(false);
-  //   });
-  // });
-
-  const preloadImages = new Promise((resolve, reject) => {
+  React.useEffect(() => {
     if (typeof window !== "undefined") {
-      imagesLoaded(document.querySelectorAll("img"), { background: true }, resolve);
+      fetchImages();
     }
   });
-  const allDone = [preloadImages];
-  Promise.all(allDone).then(() => {
-    setLoading(false);
-  });
+
+  const fetchImages = async () => {
+    const images = document.querySelectorAll("img");
+    console.log(images, "images1");
+    if (typeof window !== "undefined" && images) {
+      imagesLoaded(document.querySelectorAll("img"), { background: true }, (instance) => setLoading(false));
+    }
+  };
 
   return (
     <>
-      {!loading ? (
-        <>
-          <Script src="https://www.googletagmanager.com/gtag/js?id=G-4V2QZ9EVWQ" strategy="lazyOnload" />
-          <Script strategy="lazyOnload">
-            {`
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-4V2QZ9EVWQ" strategy="lazyOnload" />
+      <Script strategy="lazyOnload">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-4V2QZ9EVWQ');
           `}
-          </Script>
-          <Component {...pageProps} />
-        </>
-      ) : (
-        <LoadingScreen />
-      )}
+      </Script>
+      <LoadingScreen loading={loading} />
+      <Component {...pageProps} />
     </>
   );
 };

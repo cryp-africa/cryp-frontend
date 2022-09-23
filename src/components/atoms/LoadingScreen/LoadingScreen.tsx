@@ -1,8 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 
-const LoadingScreen = () => {
+interface LoadingScreenProps {
+  loading: boolean;
+}
+const LoadingScreen: FC<LoadingScreenProps> = ({ loading }) => {
   return (
-    <div className="screen">
+    <div className={`${loading ? "block z-[60] !fixed" : "hidden"} screen`}>
       <div className="balls">
         <div className="ball one" />
         <div className="ball two" />

@@ -3,15 +3,11 @@ import React from "react";
 
 import DesktopNavigation from "@components/layouts/DesktopNavigation/DesktopNavigation";
 import MobileNavigation from "@components/layouts/MobileNavigation/MobileNavigation";
-// import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
-// import ParticlesContainer2 from "@components/ParticlesContainer2/ParticlesContainer2";
 
 import { Themes } from "@shared/libs/helpers";
 
 import DesktopFooter from "../DesktopFooter/DesktopFooter";
 import MobileFooter from "../MobileFooter/MobileFooter";
-// import ParticlesContainer from "@components/ParticlesContainer/ParticlesContainer";
-// import ParticlesContainer2 from "@components/ParticlesContainer2/ParticlesContainer2";
 
 interface BasePageLayout {
   children: any;
