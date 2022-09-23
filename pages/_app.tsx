@@ -8,6 +8,7 @@ import React from "react";
 import "../styles/globals.css";
 
 import "nprogress/nprogress.css";
+import LoadingScreen from "@components/atoms/LoadingScreen/LoadingScreen";
 
 /**
  * App wrapper for the whole application
@@ -25,11 +26,19 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   Router.events.on("routeChangeComplete", () => NProgress.done());
   Router.events.on("routeChangeError", () => NProgress.done());
 
-  const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
 
-  React.useEffect(() => {
-    setLoading(true);
-  }, []);
+  // React.useEffect(() => {
+  //   const preloadImages = new Promise((resolve, reject) => {
+  //     // if (typeof window !== "undefined") {
+  //     imagesLoaded(document.querySelectorAll("img"), { background: true }, resolve);
+  //     // }
+  //   });
+  //   const allDone = [preloadImages];
+  //   Promise.all(allDone).then(() => {
+  //     setLoading(false);
+  //   });
+  // });
 
   const preloadImages = new Promise((resolve, reject) => {
     if (typeof window !== "undefined") {
@@ -58,7 +67,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           <Component {...pageProps} />
         </>
       ) : (
-        <p>loading...</p>
+        <LoadingScreen />
       )}
     </>
   );
