@@ -1,3 +1,4 @@
+import imagesLoaded from "imagesloaded";
 import type { AppProps } from "next/app";
 import Router from "next/router";
 import Script from "next/script";
@@ -24,19 +25,41 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   Router.events.on("routeChangeComplete", () => NProgress.done());
   Router.events.on("routeChangeError", () => NProgress.done());
 
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    setLoading(true);
+  }, []);
+
+  const preloadImages = new Promise((resolve, reject) => {
+    if (typeof window !== "undefined") {
+      imagesLoaded(document.querySelectorAll("img"), { background: true }, resolve);
+    }
+  });
+  const allDone = [preloadImages];
+  Promise.all(allDone).then(() => {
+    setLoading(false);
+  });
+
   return (
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-4V2QZ9EVWQ" strategy="lazyOnload" />
-      <Script strategy="lazyOnload">
-        {`
+      {!loading ? (
+        <>
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-4V2QZ9EVWQ" strategy="lazyOnload" />
+          <Script strategy="lazyOnload">
+            {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-4V2QZ9EVWQ');
           `}
-      </Script>
-      <Component {...pageProps} />
+          </Script>
+          <Component {...pageProps} />
+        </>
+      ) : (
+        <p>loading...</p>
+      )}
     </>
   );
 };
