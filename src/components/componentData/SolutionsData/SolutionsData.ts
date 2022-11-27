@@ -22,6 +22,7 @@ export const SolutionsData = [
         name: "Donation buttons to manage donations for supporters globally",
       },
     ],
+    route: "/payments",
   },
   {
     id: 2,
@@ -41,5 +42,6 @@ export const SolutionsData = [
         name: "List your NFTs on your own storefront",
       },
     ],
+    route: "#",
   },
 ];

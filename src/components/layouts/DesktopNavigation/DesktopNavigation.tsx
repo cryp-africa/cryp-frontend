@@ -11,6 +11,7 @@ interface DesktopNavigationProps {
 }
 const DesktopNavigation = ({ theme }: DesktopNavigationProps) => {
   const [navBar, setNavBar] = useState<boolean>(false);
+  const url = process.env.NEXT_PUBLIC_GATEWAY_URL ? process.env.NEXT_PUBLIC_GATEWAY_URL : "https://app.cryp.africa";
 
   const changeBackGround = () => {
     if (window.scrollY > 80) {
@@ -48,7 +49,7 @@ const DesktopNavigation = ({ theme }: DesktopNavigationProps) => {
             ))}
           </ul>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between cursor-pointer" onClick={() => window.open(`${url}/auth/sign-in`, "_blank")}>
           <p className=" cursor-pointer uppercase text-14 smallLaptop:text-16 bigLaptop:text-18 font-bold text-crypYellow-200 hover:text-crypYellow-300">sign in</p>
         </div>
       </div>

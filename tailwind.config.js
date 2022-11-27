@@ -47,10 +47,12 @@ module.exports = {
         30: ["2rem", "2.813rem"],
         37: ["2.313rem", "2.688rem"],
         40: ["2.5rem", "3.375rem"],
+        47: ["2.938rem", "3.438rem"],
         64: ["4rem", "4.375rem"],
       },
       colors: {
         crypGray: {
+          50: "#F6F6F6",
           100: "#FAFBFC",
           200: "#C5C9CD",
         },
@@ -62,6 +64,7 @@ module.exports = {
           500: "rgba(246, 246, 246, 0.2);",
         },
         crypGreen: {
+          50: "#E7FFFE",
           100: "#AFEE6E4",
           500: "#6ED7D3",
           600: "#5ABFBC",
@@ -69,8 +72,11 @@ module.exports = {
           800: "#388F88",
         },
         crypYellow: {
+          60: "#F8E8BE",
+          70: "#F2DA99",
           200: "#F4CA64",
           300: "#80631C",
+          400: "#C29E39",
         },
         crypMix: {
           200: "#A7EDEA",
@@ -94,6 +100,9 @@ module.exports = {
         learn1: "url('/images/learn/learn1.png')",
         learn2: "url('/images/learn/learn2.png')",
         learn3: "url('/images/learn/learn3.png')",
+      },
+      boxShadow: {
+        acceptPayment: "0px 20px 40px rgba(156, 197, 195, 0.3)",
       },
     },
   },

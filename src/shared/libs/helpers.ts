@@ -68,6 +68,14 @@ export const ButtonProperties = {
       disabled: "citiBlue-100",
       focused: "citiBlue-400",
     },
+    accent: {
+      name: "accent",
+      background: "crypYellow-200",
+      hover: "crypYellow-400",
+      disabled: "crypYellow-70",
+      focused: "crypYellow-200",
+      loader: "crypYellow-60",
+    },
   },
 };
 

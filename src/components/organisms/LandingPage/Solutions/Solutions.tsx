@@ -41,7 +41,7 @@ const Solutions = () => {
             </ul>
             <CustomLink
               customClass="text-12 hover:text-crypYellow-300 smallLaptop:text-16 font-semibold text-crypYellow-200 absolute bottom-4 right-5 tablet:left-10 flex items-center"
-              destination="#"
+              destination={`/${solution.route}`}
             >
               Explore <Icon className="ml-4" name="yellowArrowRight" />
             </CustomLink>
