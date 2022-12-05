@@ -42,6 +42,6 @@ export const SolutionsData = [
         name: "List your NFTs on your own storefront",
       },
     ],
-    route: "#",
+    route: "/nft",
   },
 ];
