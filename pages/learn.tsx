@@ -1,3 +1,4 @@
+import { getLearnData } from "lib/staticLearnData";
 import type { NextPage } from "next";
 import React from "react";
 
@@ -6,12 +7,24 @@ import LearnPage from "@components/modules/LearnPage/LearnPage";
 
 import { Themes } from "@shared/libs/helpers";
 
-const Learn: NextPage = () => {
+const Learn: NextPage = ({ staticFiles }: any) => {
   return (
     <BasePageLayout hideFooterOnMobile={true} theme={Themes.LIGHT} title="Cryp Learn Page">
-      <LearnPage />
+      <LearnPage staticFiles={staticFiles} />
     </BasePageLayout>
   );
 };
 
 export default Learn;
+
+/**
+ *
+ * @return {any}
+ */
+export async function getStaticProps() {
+  return {
+    props: {
+      staticFiles: getLearnData(),
+    },
+  };
+}

@@ -7,17 +7,22 @@ import GetComfortable from "@components/organisms/PaymentPage/GetComfortable/Get
 import PaymentBuilding from "@components/organisms/PaymentPage/PaymentBuilding/PaymentBuilding";
 import TradeAndAccept from "@components/organisms/PaymentPage/TradeAndAccept/TradeAndAccept";
 
-const PaymentPage = () => {
+interface PaymentPageProps {
+  theme: string;
+  staticFiles: any;
+}
+
+const PaymentPage: React.FC<PaymentPageProps> = ({ theme, staticFiles }) => {
   return (
     <div className="bg-crypGray-50 text-black">
       <div className="max-w-[90rem] mx-auto">
         <PaymentBuilding />
         <AcceptPayments />
         <ConnectAndTrade />
-        <TradeAndAccept />
-        <GetComfortable />
+        <TradeAndAccept staticFiles={staticFiles} />
+        <GetComfortable staticFiles={staticFiles} />
       </div>
-      <MobileFooter />
+      <MobileFooter theme={theme} />
     </div>
   );
 };

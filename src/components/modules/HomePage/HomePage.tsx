@@ -10,21 +10,20 @@ import ShowCase from "@components/organisms/LandingPage/ShowCase/ShowCase";
 import Solutions from "@components/organisms/LandingPage/Solutions/Solutions";
 // import News from "@components/organisms/News/News";
 
-const HomePage = () => {
+const HomePage = ({ staticFiles }: any) => {
   return (
     <div className="bg-downsizeMobile smallLaptop:bg-downsizeDesktop bg-cover bg-center bg-no-repeat text-white bg-black">
       <div className="max-w-[90rem] mx-auto">
-        <Building />
-        <ShowCase />
+        <Building staticFiles={staticFiles} />
+        <ShowCase staticFiles={staticFiles} />
         <Solutions />
         <hr className="border-1 border-[#114443] w-[17.125rem] tablet:w-[76.5rem] mx-auto mb-12" />
         <DaoCommunity />
         <OurPartners />
         <Media />
-        <OurAdvisors />
+        <OurAdvisors staticFiles={staticFiles} />
         <hr className="border-1 border-[#114443] w-[17.125rem] tablet:w-[76.5rem] mx-auto mt-4" />
       </div>
-      {/* <News /> */}
       <MobileFooter />
     </div>
   );

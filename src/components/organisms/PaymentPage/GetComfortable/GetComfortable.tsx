@@ -3,9 +3,7 @@ import React from "react";
 
 import CustomButton from "@components/atoms/CustomButton/CustomButton";
 
-import GetComfortableImg from "@images/payment/get-comfortable.png";
-
-const GetComfortable = () => {
+const GetComfortable = ({ staticFiles }: any) => {
   const url = process.env.NEXT_PUBLIC_GATEWAY_URL ? process.env.NEXT_PUBLIC_GATEWAY_URL : "https://app.cryp.africa";
 
   return (
@@ -19,13 +17,13 @@ const GetComfortable = () => {
         <CustomButton customClass="" handleClick={() => window.open(`${url}/auth/sign-up`, "_blank")} isGhost={true} title="Learn More" />
       </div>
       <div className="hidden smallLaptop:block">
-        <Image height={766} src={GetComfortableImg} width={464} />
+        <Image height={766} src={staticFiles.comfyImage} width={464} />
       </div>
       <div className="hidden tablet:block smallLaptop:hidden">
-        <Image height={466} src={GetComfortableImg} width={464} />
+        <Image height={466} src={staticFiles.comfyImage} width={464} />
       </div>
       <div className="block tablet:hidden">
-        <Image height={308} src={GetComfortableImg} width={343} />
+        <Image height={308} src={staticFiles.comfyImage} width={343} />
       </div>
     </div>
   );

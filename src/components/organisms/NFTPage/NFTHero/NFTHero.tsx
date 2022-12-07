@@ -7,7 +7,9 @@ import { ButtonProperties } from "@shared/libs/helpers";
 
 import NFTStats from "../NFTStats/NFTStats";
 
-const NFTHero = () => {
+const NFTHero = ({ staticFiles }: any) => {
+  const url = process.env.NEXT_PUBLIC_GATEWAY_URL ? process.env.NEXT_PUBLIC_GATEWAY_URL : "https://app.cryp.africa";
+
   return (
     <div className="pt-32 flex flex-col tablet:flex-row items-center bigLaptop:pt-48 pb-16 smallLaptop:pb-36 pl-4 smallLaptop:pl-[3.125rem]">
       <div>
@@ -19,7 +21,7 @@ const NFTHero = () => {
         </p>
         <CustomButton
           customClass="mt-12 tablet:mb-12 smallLaptop:mb-0 w-[10.25rem] h-[3.75] !w-[14.375rem] smallLaptop:h-[5rem] smallLaptop:w-[12rem] !text-white !w-[19.688rem] hover:!bg-crypGreen-800"
-          handleClick={() => {}}
+          handleClick={() => window.open(`${url}/auth/sign-up`, "_blank")}
           isTransparent={true}
           size={ButtonProperties.SIZES.big}
           title="CREATE A FREE ACCOUNT"
@@ -30,7 +32,7 @@ const NFTHero = () => {
         </div>
       </div>
       <div>
-        <Image alt="nft hero" height={789} src="/images/nft/nft-hero.png" width={752} />
+        <Image alt="nft hero" height={789} src={staticFiles.heroImage} width={752} />
         <div className="block pl-4 tablet:hidden">
           <NFTStats />
         </div>

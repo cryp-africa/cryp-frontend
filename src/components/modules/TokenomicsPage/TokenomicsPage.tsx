@@ -7,10 +7,10 @@ import TokenomicsV1 from "@components/organisms/TokenomicsPage/TokenomicsV1/Toke
 
 import { Themes } from "@shared/libs/helpers";
 
-const TokenomicsPage = () => {
+const TokenomicsPage = ({ staticFiles }: any) => {
   return (
     <div className="max-w-[90rem] mx-auto bg-white television:flex television:flex-col television:justify-center television:items-center">
-      <TokenomicsImg />
+      <TokenomicsImg staticFiles={staticFiles} />
       <div className="mx-auto w-full">
         <TokenomicsV1 />
         <hr className="border-1 border-[#114443] w-[274px] mx-auto tablet:w-[1224px] mb-12 tablet:mt-4" />

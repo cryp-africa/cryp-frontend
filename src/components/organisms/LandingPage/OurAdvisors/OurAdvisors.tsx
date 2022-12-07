@@ -3,9 +3,8 @@ import React, { useState } from "react";
 
 import CustomLink from "@components/atoms/CustomLink/CustomLink";
 import Icon from "@components/atoms/Icons";
-import { OurAdvisorsData } from "@components/componentData/OurAdvisorsData/OurAdvisorsData";
 
-const OurAdvisors = () => {
+const OurAdvisors = ({ staticFiles }: any) => {
   const [active, setActive] = useState<number>(0);
 
   const handleHover = (id: number) => {
@@ -26,7 +25,7 @@ const OurAdvisors = () => {
       </div>
       {/* <div className="grid grid-cols-2 border border-l-0 border-r-0 border-t-0 pb-5 border-b-[#114443] smallLaptop:grid-cols-4 gap-3 smallLaptop:mt-24  align-center justify-center cursor-pointer relative"> */}
       <div className="grid grid-cols-2 pb-5  smallLaptop:grid-cols-4 gap-3 smallLaptop:mt-24  align-center justify-center cursor-pointer relative">
-        {OurAdvisorsData.map((advisor) => (
+        {staticFiles.nftContent.map((advisor: any) => (
           <div
             className="relative mb-16 tablet:mb-48 mx-4 text-center h-[17.625rem]"
             id="about"

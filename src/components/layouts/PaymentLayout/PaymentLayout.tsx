@@ -48,7 +48,7 @@ const PaymentLayout = ({ children, theme, showNavigation, showFooter, title, des
             </div>
             {!hideFooterOnMobile && (
               <div className="block w-full z-50 smallLaptop:hidden">
-                <MobileFooter />
+                <MobileFooter theme={theme} />
               </div>
             )}
           </>

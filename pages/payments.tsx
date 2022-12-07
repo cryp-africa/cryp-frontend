@@ -1,3 +1,4 @@
+import { getPaymentsData } from "lib/staticPaymentsData";
 import type { NextPage } from "next";
 import React from "react";
 
@@ -6,12 +7,24 @@ import PaymentPage from "@components/modules/PaymentPage/PaymentPage";
 
 import { Themes } from "@shared/libs/helpers";
 
-const Home: NextPage = () => {
+const Payments: NextPage = ({ staticFiles }: any) => {
   return (
     <PaymentLayout hideFooterOnMobile={true} theme={Themes.LIGHT} title="Cryp Gateway">
-      <PaymentPage />
+      <PaymentPage staticFiles={staticFiles} theme={Themes.LIGHT} />
     </PaymentLayout>
   );
 };
 
-export default Home;
+export default Payments;
+
+/**
+ *
+ * @return {any}
+ */
+export async function getStaticProps() {
+  return {
+    props: {
+      staticFiles: getPaymentsData(),
+    },
+  };
+}

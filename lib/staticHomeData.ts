@@ -10,6 +10,8 @@ export function getHomeData() {
 
   const showCaseContent = "/images/showcase/showcase.png";
 
+  const crypLocator = "/images/crypLocator.png";
+
   const nftContent = [
     {
       id: 1,
@@ -109,5 +111,5 @@ export function getHomeData() {
     },
   ];
 
-  return { nftContent, bgContent, showCaseContent };
+  return { nftContent, bgContent, showCaseContent, crypLocator };
 }

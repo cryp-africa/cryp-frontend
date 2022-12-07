@@ -8,9 +8,7 @@ import ThankYou from "@components/organisms/modals/ThankYou/ThankYou";
 
 import { ButtonProperties } from "@shared/libs/helpers";
 
-import CrypLocator from "@images/crypLocator.png";
-
-const Building = () => {
+const Building = ({ staticFiles }: any) => {
   const [joinWaitList, setJoinWaitList] = useState<boolean>(false);
   const [thankYou, setThankYou] = useState<boolean>(false);
   return (
@@ -36,7 +34,7 @@ const Building = () => {
         </div>
         <div className="absolute top-40 right-0">
           <div className="">
-            <Image height={409} src={CrypLocator} width={1051} />
+            <Image height={409} src={staticFiles.crypLocator} width={1051} />
           </div>
         </div>
       </div>
