@@ -5,18 +5,18 @@ module.exports = {
       pattern: /bg-/,
       variants: ["hover"],
     },
-    {
-      pattern: /text-/,
-      variants: ["hover"],
-    },
-    {
-      pattern: /fill-/,
-      variants: ["hover"],
-    },
-    {
-      pattern: /border-/,
-      variants: ["hover"],
-    },
+    // {
+    //   pattern: /text-/,
+    //   variants: ["hover"],
+    // },
+    // {
+    //   pattern: /fill-/,
+    //   variants: ["hover"],
+    // },
+    // {
+    //   pattern: /border-/,
+    //   variants: ["hover"],
+    // },
   ],
   theme: {
     container: {
